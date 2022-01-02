@@ -356,7 +356,7 @@ const Header = () => {
                             
                             </li>
                             <li className="nav-item ">
-                                <NavLink className="nav-link px-xl-4" to="/blog-grid" id="navbarLandings">
+                                <NavLink className="nav-link px-xl-4" to="/blog" id="navbarLandings">
                                     Blog
                                 </NavLink>
                             
