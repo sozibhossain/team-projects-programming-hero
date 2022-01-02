@@ -1,10 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <>
-            <div className="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+            <div className="modal fade" id="modalExample" tabIndex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                 <div className="modal-body">
@@ -24,7 +24,7 @@ const Header = () => {
                         <div className="col-12 col-md-6">
                         <div className="form-label-group">
                             <input type="text" className="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name"/>
-                            <label for="registrationFirstNameModal">First name</label>
+                            <label htmlFor="registrationFirstNameModal">First name</label>
                         </div>
 
                         </div>
@@ -32,7 +32,7 @@ const Header = () => {
 
                         <div className="form-label-group">
                             <input type="text" className="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name"/>
-                            <label for="registrationLastNameModal">Last name</label>
+                            <label htmlFor="registrationLastNameModal">Last name</label>
                         </div>
 
                         </div>
@@ -42,7 +42,7 @@ const Header = () => {
 
                         <div className="form-label-group">
                             <input type="email" className="form-control form-control-flush" id="registrationEmailModal" placeholder="Email"/>
-                            <label for="registrationEmailModal">Email</label>
+                            <label htmlFor="registrationEmailModal">Email</label>
                         </div>
 
                         </div>
@@ -50,7 +50,7 @@ const Header = () => {
 
                         <div className="form-label-group">
                             <input type="password" className="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password"/>
-                            <label for="registrationPasswordModal">Password</label>
+                            <label htmlFor="registrationPasswordModal">Password</label>
                         </div>
 
                         </div>
@@ -89,14 +89,14 @@ const Header = () => {
                                 <form className="mb-5">
 
                                     <div className="form-group mb-5">
-                                        <label for="modalSigninEmail">
+                                        <label htmlFor="modalSigninEmail">
                                             Username or Email
                                         </label>
                                         <input type="email" className="form-control" id="modalSigninEmail" placeholder="creativelayers"/>
                                     </div>
 
                                     <div className="form-group mb-5">
-                                        <label for="modalSigninPassword">
+                                        <label htmlFor="modalSigninPassword">
                                             Password
                                         </label>
                                         <input type="password" className="form-control" id="modalSigninPassword" placeholder="**********"/>
@@ -105,7 +105,7 @@ const Header = () => {
                                     <div className="d-flex align-items-center mb-5 font-size-sm">
                                         <div className="form-check">
                                             <input className="form-check-input text-gray-800" type="checkbox" id="autoSizingCheck"/>
-                                            <label className="form-check-label text-gray-800" for="autoSizingCheck">
+                                            <label className="form-check-label text-gray-800" htmlFor="autoSizingCheck">
                                                 Remember me
                                             </label>
                                         </div>
@@ -139,7 +139,7 @@ const Header = () => {
                             <div className="modal-body">
                                 <form className="mb-5">
                                     <div className="form-group mb-5">
-                                        <label for="modalSignupUsername">
+                                        <label htmlFor="modalSignupUsername">
                                             Username
                                         </label>
                                         <input type="text" className="form-control" id="modalSignupUsername" placeholder="John"/>
@@ -147,7 +147,7 @@ const Header = () => {
 
                                     {/* <!-- Email --> */}
                                     <div className="form-group mb-5">
-                                        <label for="modalSignupEmail">
+                                        <label htmlFor="modalSignupEmail">
                                             Username or Email
                                         </label>
                                         <input type="email" className="form-control" id="modalSignupEmail" placeholder="johndoe@creativelayers.com"/>
@@ -155,7 +155,7 @@ const Header = () => {
 
                                     {/* <!-- Password --> */}
                                     <div className="form-group mb-5">
-                                        <label for="modalSignupPassword">
+                                        <label htmlFor="modalSignupPassword">
                                             Password
                                         </label>
                                         <input type="password" className="form-control" id="modalSignupPassword" placeholder="**********"/>
@@ -194,7 +194,7 @@ const Header = () => {
                                 <form className="mb-5">
                                     {/* <!-- Email --> */}
                                     <div className="form-group">
-                                        <label for="modalForgotpasswordEmail">
+                                        <label htmlFor="modalForgotpasswordEmail">
                                             Email
                                         </label>
                                         <input type="email" className="form-control" id="modalForgotpasswordEmail" placeholder="johndoe@creativelayers.com"/>
@@ -242,7 +242,7 @@ const Header = () => {
                                             <div className="font-size-sm">1 × $18.00</div>
                                         </div>
 
-                                        <a href="#" className="d-inline-flex text-secondary">
+                                        <Link to="#" className="d-inline-flex text-secondary">
                                             
                                             {/* <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10.0469 0H5.95294C5.37707 0 4.90857 0.4685 4.90857 1.04437V3.02872H6.16182V1.25325H9.83806V3.02872H11.0913V1.04437C11.0913 0.4685 10.6228 0 10.0469 0Z" fill="currentColor"/>
@@ -252,7 +252,7 @@ const Header = () => {
                                                 <path d="M0.543091 2.4021V3.65535H1.849L2.885 15.4283C2.9134 15.7519 3.18434 16 3.50912 16H12.4697C12.7946 16 13.0657 15.7517 13.0939 15.4281L14.1299 3.65535H15.4569V2.4021H0.543091ZM11.8958 14.7468H4.08293L3.10706 3.65535H12.8719L11.8958 14.7468Z" fill="currentColor"/>
                                             </svg> */}
 
-                                        </a>
+                                        </Link>
                                     </div>
                                 </li>
 
@@ -265,7 +265,7 @@ const Header = () => {
                                             <div className="font-size-sm">1 × $18.00</div>
                                         </div>
 
-                                        <a href="#" className="d-inline-flex text-secondary">
+                                        <Link to="#" className="d-inline-flex text-secondary">
                                             
                                             {/* <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10.0469 0H5.95294C5.37707 0 4.90857 0.4685 4.90857 1.04437V3.02872H6.16182V1.25325H9.83806V3.02872H11.0913V1.04437C11.0913 0.4685 10.6228 0 10.0469 0Z" fill="currentColor"/>
@@ -275,7 +275,7 @@ const Header = () => {
                                                 <path d="M0.543091 2.4021V3.65535H1.849L2.885 15.4283C2.9134 15.7519 3.18434 16 3.50912 16H12.4697C12.7946 16 13.0657 15.7517 13.0939 15.4281L14.1299 3.65535H15.4569V2.4021H0.543091ZM11.8958 14.7468H4.08293L3.10706 3.65535H12.8719L11.8958 14.7468Z" fill="currentColor"/>
                                             </svg> */}
 
-                                        </a>
+                                        </Link>
                                     </div>
                                 </li>
 
@@ -288,7 +288,7 @@ const Header = () => {
                                             <div className="font-size-sm">1 × $18.00</div>
                                         </div>
 
-                                        <a href="#" className="d-inline-flex text-secondary">
+                                        <Link to="#" className="d-inline-flex text-secondary">
                                            
                                             {/* <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10.0469 0H5.95294C5.37707 0 4.90857 0.4685 4.90857 1.04437V3.02872H6.16182V1.25325H9.83806V3.02872H11.0913V1.04437C11.0913 0.4685 10.6228 0 10.0469 0Z" fill="currentColor"/>
@@ -298,7 +298,7 @@ const Header = () => {
                                                 <path d="M0.543091 2.4021V3.65535H1.849L2.885 15.4283C2.9134 15.7519 3.18434 16 3.50912 16H12.4697C12.7946 16 13.0657 15.7517 13.0939 15.4281L14.1299 3.65535H15.4569V2.4021H0.543091ZM11.8958 14.7468H4.08293L3.10706 3.65535H12.8719L11.8958 14.7468Z" fill="currentColor"/>
                                             </svg> */}
 
-                                        </a>
+                                        </Link>
                                     </div>
                                 </li>
                             </ul>
@@ -309,8 +309,8 @@ const Header = () => {
                             </div>
 
                             <div className="d-md-flex justify-content-between">
-                                <a href="#" className="d-block d-md-inline-block mb-4 mb-md-0 btn btn-primary btn-sm-wide">VIEW CART</a>
-                                <a href="#" className="d-block d-md-inline-block btn btn-teal btn-sm-wide text-white">CHECKOUT</a>
+                                <Link to="#" className="d-block d-md-inline-block mb-4 mb-md-0 btn btn-primary btn-sm-wide">VIEW CART</Link>
+                                <Link to="#" className="d-block d-md-inline-block btn btn-teal btn-sm-wide text-white">CHECKOUT</Link>
                             </div>
                         </div>
                     </div>
@@ -324,9 +324,9 @@ const Header = () => {
                 <div className="container">
 
                     {/* <!-- Brand --> */}
-                    <a className="navbar-brand me-0" href="index.html">
+                    <NavLink className="navbar-brand me-0" href="/">
                         <img src="assets/img/brand.svg" className="navbar-brand-img" alt="..."/>
-                    </a>
+                    </NavLink>
 
                     {/* <!-- Collapse --> */}
                     <div className="collapse navbar-collapse z-index-lg" id="navbarCollapse">
@@ -344,7 +344,7 @@ const Header = () => {
                         {/* <!-- Navigation --> */}
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item ">
-                                <NavLink className="nav-link px-xl-4" to="/" id="navbarLandings">
+                                <NavLink className="nav-link px-xl-4" to="/home" id="navbarLandings">
                                     Home
                                 </NavLink>
                             

@@ -6,9 +6,9 @@ import {
 import './App.css';
 import AboutUs from "./Components/Pages/About/AboutUs/AboutUs";
 import BlogGrid from "./Components/Pages/BlogGrid/BlogGrid";
-import ContactDetail from "./Components/Pages/Contact/ContactDetail";
-import Home from "./Components/Pages/Home/Home";
+import Contact from "./Components/Pages/Contact/Contact";
 import TermsOfService from "./Components/Pages/TermsOfService/TermsOfService";
+import Home from "./Components/Pages/Home/Home";
 import Footer from "./Components/Shared/Footer/Footer";
 import Header from "./Components/Shared/Header/Header";
 
@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Header></Header>
         <Routes>
-          <Route path="/contact" element={<ContactDetail />}>
+          <Route path="/contact" element={<Contact />}>
             
           </Route>
           {/* <Route path="/about">
@@ -30,7 +30,7 @@ function App() {
             
           </Route> */}
           <Route path="/" element={<Home />}></Route>
-          <Route path="/about-us" element={<AboutUs />}></Route>
+          <Route path="/about" element={<AboutUs />}></Route>
           <Route path="/blog" element={<BlogGrid />}></Route>
           <Route path="/termsofservice" element={<TermsOfService/>}></Route>
         </Routes>
