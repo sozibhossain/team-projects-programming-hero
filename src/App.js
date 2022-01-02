@@ -4,17 +4,20 @@ import {
   Route, Routes
 } from "react-router-dom";
 import './App.css';
-import Heading from "./Components/Pages/Contact/Heading";
+import AboutUs from "./Components/Pages/About/AboutUs/AboutUs";
+import Contact from "./Components/Pages/Contact/Contact";
 import Home from "./Components/Pages/Home/Home";
 import Footer from "./Components/Shared/Footer/Footer";
 import Header from "./Components/Shared/Header/Header";
+
+
 
 function App() {
   return (
     <Router>
       <Header></Header>
         <Routes>
-          <Route path="/contact" element={<Heading />}>
+          <Route path="/contact" element={<Contact />}>
             
           </Route>
           {/* <Route path="/about">
@@ -26,9 +29,8 @@ function App() {
           <Route path="/courses">
             
           </Route> */}
-          <Route path="/" element={<Home />}>
-            
-          </Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about-us" element={<AboutUs />}></Route>
         </Routes>
       <Footer></Footer>
     </Router>
