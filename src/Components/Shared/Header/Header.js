@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -343,33 +344,33 @@ const Header = () => {
                         {/* <!-- Navigation --> */}
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item ">
-                                <a className="nav-link px-xl-4" href="#" id="navbarLandings">
+                                <NavLink className="nav-link px-xl-4" to="/" id="navbarLandings">
                                     Home
-                                </a>
+                                </NavLink>
                             
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link px-xl-4" href="courses.html" id="navbarLandings">
+                                <NavLink className="nav-link px-xl-4" to="/courses" id="navbarLandings">
                                     Courses
-                                </a>
+                                </NavLink>
                             
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link px-xl-4" href="blog-grid.html" id="navbarLandings">
+                                <NavLink className="nav-link px-xl-4" to="/blog" id="navbarLandings">
                                     Blog
-                                </a>
+                                </NavLink>
                             
                             </li>
 
                             <li className="nav-item ">
-                                <a className="nav-link px-xl-4" href="about.html" id="navbarLandings">
+                                <NavLink className="nav-link px-xl-4" to="/about"  id="navbarLandings">
                                     About Us
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link px-xl-4" href="contact-us.html" id="navbarLandings">
+                                <NavLink className="nav-link px-xl-4" to="/contact"  id="navbarLandings">
                                     Contact Us
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
