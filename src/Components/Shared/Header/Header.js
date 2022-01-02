@@ -372,6 +372,11 @@ const Header = () => {
                                     Contact Us
                                 </NavLink>
                             </li>
+                            <li className="nav-item ">
+                                <NavLink className="nav-link px-xl-4" to="/login"  id="navbarLandings">
+                                    Login
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
 
