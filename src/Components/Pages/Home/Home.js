@@ -1,5 +1,6 @@
 import React from 'react';
 import Blog from './Blog';
+import CallToAction from './CallToAction';
 import Categories from './Categories';
 import CountUp from './CountUp';
 import FeaturedCourses from './FeaturedCourses';
@@ -17,6 +18,7 @@ const Home = () => {
            <CountUp/>
            <Instructors/>
            <Blog/>
+           <CallToAction/>
         </>
     );
 };
