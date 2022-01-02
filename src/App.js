@@ -9,6 +9,7 @@ import BlogGrid from "./Components/Pages/BlogGrid/BlogGrid";
 import Contact from "./Components/Pages/Contact/Contact";
 import Home from "./Components/Pages/Home/Home";
 import Login from "./Components/Pages/Login/Login";
+import Registration from "./Components/Pages/Registration/Registration";
 import TermsOfService from "./Components/Pages/TermsOfService/TermsOfService";
 import Footer from "./Components/Shared/Footer/Footer";
 import Header from "./Components/Shared/Header/Header";
@@ -24,9 +25,7 @@ function App() {
           <Route path="/about">
             
           </Route>
-          <Route path="/blog">
-            
-          </Route>
+          <Route path="/registration" element={<Registration/>}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about-us" element={<AboutUs />}></Route>

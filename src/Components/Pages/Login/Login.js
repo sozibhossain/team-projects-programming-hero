@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -68,7 +69,7 @@ const Login = () => {
 
                 
                 <p className="mb-0 font-size-sm text-center">
-                    Don't have an account? <a className="text-underline" href="register.html">Sign up</a>
+                    Don't have an account? <NavLink className="text-underline" to="/registration">Sign up</NavLink>
                 </p>
             </div>
         </div>
