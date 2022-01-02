@@ -3,6 +3,7 @@ import Categories from './Categories';
 import CountUp from './CountUp';
 import FeaturedCourses from './FeaturedCourses';
 import Hero from './Hero';
+import Instructors from './Instructors';
 import Videio from './Videio';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
            <FeaturedCourses/>
            <Videio/>
            <CountUp/>
+           <Instructors/>
         </>
     );
 };
