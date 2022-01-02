@@ -1,16 +1,37 @@
 // import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Route, Routes
+} from "react-router-dom";
 import './App.css';
-import Home from './Components/Pages/Home/Home';
-import Header from './Components/Shared/Header/Header';
-import Footer from './Components/Shared/Footer/Footer';
+import ContactDetail from "./Components/Pages/Contact/ContactDetail";
+import Home from "./Components/Pages/Home/Home";
+import Footer from "./Components/Shared/Footer/Footer";
+import Header from "./Components/Shared/Header/Header";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header></Header>
-      <Home></Home>
+        <Routes>
+          <Route path="/contact" element={<ContactDetail />}>
+            
+          </Route>
+          {/* <Route path="/about">
+            
+          </Route>
+          <Route path="/blog">
+            
+          </Route>
+          <Route path="/courses">
+            
+          </Route> */}
+          <Route path="/" element={<Home />}>
+            
+          </Route>
+        </Routes>
       <Footer></Footer>
-    </div>
+    </Router>
   );
 }
 
