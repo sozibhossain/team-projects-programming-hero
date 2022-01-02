@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Subscribe = () => {
+const Band = () => {
     return (
         <>
             
@@ -8,4 +8,4 @@ const Subscribe = () => {
     );
 };
 
-export default Subscribe;
+export default Band;

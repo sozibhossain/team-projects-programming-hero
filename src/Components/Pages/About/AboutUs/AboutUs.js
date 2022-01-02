@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutBanner from '../AboutBanner/AboutBanner';
+import Band from '../Band/Band';
 import OurStory from '../OurStory/OurStory';
 import StudentSay from '../StudentSay/StudentSay';
 import Subscribe from '../Subscribe/Subscribe';
@@ -12,6 +13,7 @@ const AboutUs = () => {
             <OurStory/>
             <WhyStudy/>
             <StudentSay/>
+            <Band/>
             <Subscribe/>
         </div>
     );
