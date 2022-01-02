@@ -5,17 +5,19 @@ import {
 } from "react-router-dom";
 import './App.css';
 import AboutUs from "./Components/Pages/About/AboutUs/AboutUs";
-import ContactDetail from "./Components/Pages/Contact/ContactDetail";
+import Contact from "./Components/Pages/Contact/Contact";
 import Home from "./Components/Pages/Home/Home";
 import Footer from "./Components/Shared/Footer/Footer";
 import Header from "./Components/Shared/Header/Header";
+
+
 
 function App() {
   return (
     <Router>
       <Header></Header>
         <Routes>
-          <Route path="/contact" element={<ContactDetail />}>
+          <Route path="/contact" element={<Contact />}>
             
           </Route>
           {/* <Route path="/about">
