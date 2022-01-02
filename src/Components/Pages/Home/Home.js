@@ -1,5 +1,6 @@
 import React from 'react';
 import Categories from './Categories';
+import FeaturedCourses from './FeaturedCourses';
 import Hero from './Hero';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
            <Hero></Hero>
            <Categories></Categories>
+           <FeaturedCourses/>
         </>
     );
 };

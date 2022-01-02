@@ -111,7 +111,7 @@ const Header = () => {
                                         </div>
 
                                         <div className="ms-auto">
-                                            <a className="text-gray-800" data-bs-toggle="collapse" href="#collapseForgotPassword" role="button" aria-expanded="false" aria-controls="collapseForgotPassword">Forgot Password</a>
+                                            <Link className="text-gray-800" data-bs-toggle="collapse" to="#collapseForgotPassword" role="button" aria-expanded="false" aria-controls="collapseForgotPassword">Forgot Password</Link>
                                         </div>
                                     </div>
                                     <button className="btn btn-block btn-primary" type="submit">
@@ -119,7 +119,7 @@ const Header = () => {
                                     </button>
                                 </form>
                                 <p className="mb-0 font-size-sm text-center">
-                                    Don't have an account? <a className="text-underline" data-bs-toggle="collapse" href="#collapseSignup" role="button" aria-expanded="false" aria-controls="collapseSignup">Sign up</a>
+                                    Don't have an account? <Link className="text-underline" data-bs-toggle="collapse" to="#collapseSignup" role="button" aria-expanded="false" aria-controls="collapseSignup">Sign up</Link>
                                 </p>
                             </div>
                         </div>
@@ -170,7 +170,7 @@ const Header = () => {
 
                                 {/* <!-- Text --> */}
                                 <p className="mb-0 font-size-sm text-center">
-                                    Already have an account? <a className="text-underline" data-bs-toggle="collapse" href="#collapseSignin" role="button" aria-expanded="true" aria-controls="collapseSignin">Log In</a>
+                                    Already have an account? <Link className="text-underline" data-bs-toggle="collapse" to="#collapseSignin" role="button" aria-expanded="true" aria-controls="collapseSignin">Log In</Link>
                                 </p>
                             </div>
                         </div>
@@ -208,7 +208,7 @@ const Header = () => {
 
                                 {/* <!-- Text --> */}
                                 <p className="mb-0 font-size-sm text-center">
-                                    Remember your password? <a className="text-underline" data-bs-toggle="collapse" href="#collapseSignin" role="button" aria-expanded="false" aria-controls="collapseSignin">Log In</a>
+                                    Remember your password? <Link className="text-underline" data-bs-toggle="collapse" to="#collapseSignin" role="button" aria-expanded="false" aria-controls="collapseSignin">Log In</Link>
                                 </p>
                             </div>
                         </div>
@@ -324,7 +324,7 @@ const Header = () => {
                 <div className="container">
 
                     {/* <!-- Brand --> */}
-                    <NavLink className="navbar-brand me-0" href="/">
+                    <NavLink className="navbar-brand me-0" to="/">
                         <img src="assets/img/brand.svg" className="navbar-brand-img" alt="..."/>
                     </NavLink>
 
@@ -344,7 +344,7 @@ const Header = () => {
                         {/* <!-- Navigation --> */}
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item ">
-                                <NavLink className="nav-link px-xl-4" to="/home" id="navbarLandings">
+                                <NavLink className="nav-link px-xl-4" to="/" id="navbarLandings">
                                     Home
                                 </NavLink>
                             
@@ -378,7 +378,7 @@ const Header = () => {
                     {/* <!-- Search, Account & Cart --> */}
                     <ul className="navbar-nav flex-row ms-auto ms-xl-0 me-n2 me-md-n4 align-items-center">
                         <li className="nav-item border-0 px-0 d-none d-370-block d-xl-block">
-                            <a className="nav-link d-flex px-3 px-md-4 search-mobile text-white-all icon-xs" data-bs-toggle="collapse" href="#collapseSearchMobile" role="button" aria-expanded="false" aria-controls="collapseSearchMobile">
+                            <Link className="nav-link d-flex px-3 px-md-4 search-mobile text-white-all icon-xs" data-bs-toggle="collapse" to="#collapseSearchMobile" role="button" aria-expanded="false" aria-controls="collapseSearchMobile">
                                 {/* <!-- Icon --> */}
                                 {/* <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.8477 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.8477 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.8477 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z" fill="currentColor"/>
@@ -392,7 +392,7 @@ const Header = () => {
                                     <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
                                 </svg> */}
 
-                            </a>
+                            </Link>
 
                             <div className="collapse position-absolute right-0 left-0 mx-4" id="collapseSearchMobile">
                                 <div className="card card-body p-4 mt-6 mt-xl-4 shadow-dark">
@@ -418,7 +418,7 @@ const Header = () => {
 
                         <li className="nav-item border-0 px-0">
                             {/* <!-- Button trigger account modal --> */}
-                            {/* <a href="#" className="nav-link d-flex px-3 px-md-4 text-white-all icon-xs" data-bs-toggle="modal" data-bs-target="#accountModal">
+                            {/* <Link to="#" className="nav-link d-flex px-3 px-md-4 text-white-all icon-xs" data-bs-toggle="modal" data-bs-target="#accountModal">
                                
                                
 

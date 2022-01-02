@@ -17,19 +17,9 @@ function App() {
     <Router>
       <Header></Header>
         <Routes>
-          <Route path="/contact" element={<Contact />}>
-            
-          </Route>
-          {/* <Route path="/about">
-            
-          </Route>
-          <Route path="/blog">
-            
-          </Route>
-          <Route path="/courses">
-            
-          </Route> */}
           <Route path="/" element={<Home />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
           <Route path="/about" element={<AboutUs />}></Route>
           <Route path="/blog" element={<BlogGrid />}></Route>
           <Route path="/termsofservice" element={<TermsOfService/>}></Route>
