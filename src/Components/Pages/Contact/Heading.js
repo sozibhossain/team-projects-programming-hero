@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Form from './ContactDetails';
 
 const Heading = () => {
     return (
@@ -23,7 +22,6 @@ const Heading = () => {
         </div>
         <img className="d-none img-fluid" src="...html" alt="..."/>
     </header>
-    <Form></Form>
     </>
     );
 };

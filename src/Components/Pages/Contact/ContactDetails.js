@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactMap from './ContactMap';
 
 const ContactDetails = () => {
     return (
@@ -159,9 +158,6 @@ const ContactDetails = () => {
                         <button type="submit" className="btn btn-primary btn-block mw-md-300p">SEND</button>
                     </div>
                 </form>
-        </div>
-        <div className="mb-8 md-12 mt-5 rounded overflow-hidden grayscal-hover">
-        <ContactMap></ContactMap>
         </div>
         </div>
         
