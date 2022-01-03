@@ -1,8 +1,31 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const BlogGrid = () => {
     return (
         <div>
+
+            <header class="py-8 py-md-11">
+                <div class="container text-center py-xl-2">
+                    <h1 class="display-4 fw-semi-bold mb-0">Blog Grid 01</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcrumb-scroll justify-content-center">
+                            <li class="breadcrumb-item">
+                                <NavLink className="nav-link px-xl-4" to="/"  id="navbarLandings">
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <NavLink className="nav-link px-xl-4" to="/blog"  id="navbarLandings">
+                                Blog Grid 01
+                                </NavLink>
+                            </li>
+
+                        </ol>
+                    </nav>
+                </div>
+            </header>
+
             <div class="container mb-6 mb-xl-8 z-index-2">
                 <div class="d-xl-flex align-items-center">
                     <p class="mb-xl-0">We found <span class="text-dark">834 article</span> available for you</p>
@@ -45,9 +68,6 @@ const BlogGrid = () => {
                     </div>
                 </div>
             </div>
-
-
-
 
 
             <div class="container pb-4 pb-xl-7">
