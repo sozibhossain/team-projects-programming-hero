@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const BlogGrid = () => {
     return (
@@ -75,11 +75,11 @@ const BlogGrid = () => {
                     <div class="col-md mb-6">
                         <div class="card border shadow p-2 lift sk-fade">
                             <div class="card-zoom position-relative">
-                                <a href="blog-single.html" class="card-img d-block sk-thumbnail img-ratio-3"><img class="rounded shadow-light-lg img-fluid" src="assets/img/post/post-1.jpg" alt="..."/></a>
+                                <Link to="/blog-single" class="card-img d-block sk-thumbnail img-ratio-3"><img class="rounded shadow-light-lg img-fluid" src="assets/img/post/post-1.jpg" alt="..."/></Link>
 
-                                <a href="blog-single.html" class="badge sk-fade-bottom badge-lg badge-purple badge-pill badge-float bottom-0 left-0 mb-4 ms-4 px-5 me-4">
+                                <Link to="/blog-single" class="badge sk-fade-bottom badge-lg badge-purple badge-pill badge-float bottom-0 left-0 mb-4 ms-4 px-5 me-4">
                                     <span class="text-white fw-normal font-size-sm">Figma</span>
-                                </a>
+                                </Link>
                             </div>
 
                             <div class="card-footer px-2 pb-0 pt-4">
