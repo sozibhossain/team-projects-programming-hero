@@ -212,18 +212,6 @@ const ShoppingCart = () => {
                 </div>
             </div>
 
-            <Container>
-                    {/* Stack the columns on mobile by making one full-width and the other half-width */}
-                <Row>
-                    <Col xs={12} md={8}>
-                        xs=12 md=8
-                    </Col>
-                    <Col xs={6} md={4}>
-                        xs=6 md=4
-                    </Col>
-                </Row>
-            </Container>
-
             <Subscribe></Subscribe>
 
         </div>

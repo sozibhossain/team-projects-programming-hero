@@ -10,6 +10,7 @@ import BlogSingle from "./Components/Pages/BlogSingle/BlogSingle";
 import Checkout from "./Components/Pages/Checkout/Checkout";
 import Contact from "./Components/Pages/Contact/Contact";
 import Courses from "./Components/Pages/Courses/Courses";
+import Faq from "./Components/Pages/Faq/Faq";
 import Gallery from "./Components/Pages/Gallery/Gallery";
 import Home from "./Components/Pages/Home/Home";
 import Login from "./Components/Pages/Login/Login";
@@ -38,6 +39,7 @@ function App() {
           <Route path="/termsofservice" element={<TermsOfService/>}></Route>
           <Route path="/gallery" element={<Gallery/>}></Route>
           <Route path="/shopping-cart" element={<ShoppingCart/>}></Route>
+          <Route path="/faq" element={<Faq/>}></Route>
         </Routes>
       <Footer></Footer>
     </Router>
