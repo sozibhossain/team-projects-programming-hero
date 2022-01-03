@@ -7,6 +7,7 @@ import './App.css';
 import AboutUs from "./Components/Pages/About/AboutUs/AboutUs";
 import BlogGrid from "./Components/Pages/BlogGrid/BlogGrid";
 import Contact from "./Components/Pages/Contact/Contact";
+import Gallery from "./Components/Pages/Gallery/Gallery";
 import Home from "./Components/Pages/Home/Home";
 import Login from "./Components/Pages/Login/Login";
 import Registration from "./Components/Pages/Registration/Registration";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/about-us" element={<AboutUs />}></Route>
           <Route path="/blog" element={<BlogGrid />}></Route>
           <Route path="/termsofservice" element={<TermsOfService/>}></Route>
+          <Route path="/gallery" element={<Gallery/>}></Route>
         </Routes>
       <Footer></Footer>
     </Router>
