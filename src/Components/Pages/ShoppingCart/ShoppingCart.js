@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Subscribe from '../Subscribe/Subscribe';
 
 const ShoppingCart = () => {
@@ -10,12 +11,14 @@ const ShoppingCart = () => {
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-scroll justify-content-center">
                             <li class="breadcrumb-item">
-                                <a class="text-gray-800" href="#">
+                                <NavLink className="nav-link px-xl-4" to="/"  id="navbarLandings">
                                     Home
-                                </a>
+                                </NavLink>
                             </li>
                             <li class="breadcrumb-item text-gray-800 active" aria-current="page">
+                                <NavLink className="nav-link px-xl-4" to="/shopping-cart"  id="navbarLandings">
                                 Shop Cart
+                                </NavLink>
                             </li>
                         </ol>
                     </nav>
@@ -59,7 +62,7 @@ const ShoppingCart = () => {
 
                                                 <td class="product-quantity" data-title="Quantity">
                                                     <div class="border rounded d-flex align-items-center">
-                                                        {/* <input class="form-control form-control-sm border-0 quantity mw-70p px-2" min="0" name="quantity" value="1" type="number"> */}
+                                                        <input class="form-control form-control-sm border-0 quantity mw-70p px-2" min="0" name="quantity" value="1" type="number"/>
                                                         <div class="d-flex flex-column me-3">
                                                             <button class="border-0 shadow-none quantity-plus font-size-10 p-0 bg-transparent outline-0 text-dark">
                                                                 <i class="fas fa-chevron-up"></i>
@@ -99,7 +102,7 @@ const ShoppingCart = () => {
 
                                                 <td class="product-quantity" data-title="Quantity">
                                                     <div class="border rounded d-flex align-items-center">
-                                                        {/* <input class="form-control form-control-sm border-0 quantity mw-70p px-2" min="0" name="quantity" value="1" type="number"> */}
+                                                        <input class="form-control form-control-sm border-0 quantity mw-70p px-2" min="0" name="quantity" value="1" type="number"/>
                                                         <div class="d-flex flex-column me-3">
                                                             <button class="border-0 shadow-none quantity-plus font-size-10 p-0 bg-transparent outline-0 text-dark">
                                                                 <i class="fas fa-chevron-up"></i>
@@ -139,7 +142,7 @@ const ShoppingCart = () => {
 
                                                 <td class="product-quantity" data-title="Quantity">
                                                     <div class="border rounded d-flex align-items-center">
-                                                        {/* <input class="form-control form-control-sm border-0 quantity mw-70p px-2" min="0" name="quantity" value="1" type="number"> */}
+                                                        <input class="form-control form-control-sm border-0 quantity mw-70p px-2" min="0" name="quantity" value="1" type="number"/>
                                                         <div class="d-flex flex-column me-3">
                                                             <button class="border-0 shadow-none quantity-plus font-size-10 p-0 bg-transparent outline-0 text-dark">
                                                                 <i class="fas fa-chevron-up"></i>
@@ -165,10 +168,10 @@ const ShoppingCart = () => {
                                                 <td colspan="5" class="actions">
                                                     <div class="coupon">
                                                         <label for="coupon_code">Coupon:</label>
-                                                        {/* <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code" autocomplete="off"> <input type="submit" class="button" name="apply_coupon" value="Apply coupon"> */}
+                                                        <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code" autocomplete="off"/> <input type="submit" class="button" name="apply_coupon" value="Apply coupon"/>
                                                     </div>
 
-                                                    {/* <input type="submit" class="button" name="update_cart" value="Update cart"> */}
+                                                    <input type="submit" class="button" name="update_cart" value="Update cart"/>
                                                 </td>
                                             </tr>
                                         </tbody>

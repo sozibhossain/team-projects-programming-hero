@@ -337,7 +337,7 @@ const Header = () => {
                         </div>
 
                         <div className="d-md-flex justify-content-between">
-                            <Link to="#" className="d-block d-md-inline-block mb-4 mb-md-0 btn btn-primary btn-sm-wide">VIEW CART</Link>
+                            <Link to="/shopping-cart" className="d-block d-md-inline-block mb-4 mb-md-0 btn btn-primary btn-sm-wide">VIEW CART</Link>
                             <Link to="/checkout" className="d-block d-md-inline-block btn btn-teal btn-sm-wide text-white">CHECKOUT</Link>
                         </div>
                     </div>
