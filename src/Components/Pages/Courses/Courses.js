@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Courses = () => {
     return (
@@ -383,9 +384,9 @@ const Courses = () => {
                                     </a>
                                 </div>
 
-                                <a href="course-single-v5.html" className="card-img sk-thumbnail d-block">
+                                <Link to="/course-single" className="card-img sk-thumbnail d-block">
                                     <img className="rounded shadow-light-lg" src="assets/img/products/product-1.jpg" alt="..."/>
-                                </a>
+                                </Link>
 
                                 <span className="badge sk-fade-bottom badge-lg badge-orange badge-pill badge-float bottom-0 left-0 mb-4 ms-4">
                                     <span className="text-white text-uppercase fw-bold font-size-xs">BEST SELLER</span>

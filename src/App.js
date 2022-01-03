@@ -10,6 +10,7 @@ import BlogSingle from "./Components/Pages/BlogSingle/BlogSingle";
 import Checkout from "./Components/Pages/Checkout/Checkout";
 import Contact from "./Components/Pages/Contact/Contact";
 import Courses from "./Components/Pages/Courses/Courses";
+import CourseSingle from "./Components/Pages/CourseSingle/CourseSingle";
 import Gallery from "./Components/Pages/Gallery/Gallery";
 import Home from "./Components/Pages/Home/Home";
 import Login from "./Components/Pages/Login/Login";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/blog" element={<BlogGrid />}></Route>
           <Route path="/blog-single" element={<BlogSingle />}></Route>
           <Route path="/courses" element={<Courses />}></Route>
+          <Route path="/course-single" element={<CourseSingle />}></Route>
           <Route path="/termsofservice" element={<TermsOfService/>}></Route>
           <Route path="/gallery" element={<Gallery/>}></Route>
         </Routes>
