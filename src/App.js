@@ -15,7 +15,6 @@ import Home from "./Components/Pages/Home/Home";
 import Login from "./Components/Pages/Login/Login";
 import Registration from "./Components/Pages/Registration/Registration";
 import TermsOfService from "./Components/Pages/TermsOfService/TermsOfService";
-import Home from "./Components/Pages/Home/Home";
 import Footer from "./Components/Shared/Footer/Footer";
 import Header from "./Components/Shared/Header/Header";
 
