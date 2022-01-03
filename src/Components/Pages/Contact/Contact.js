@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactDetails from './ContactDetails';
-import ContactMap from './ContactMap';
+// import ContactMap from './ContactMap';
 import Heading from './Heading';
 
 const Contact = () => {
@@ -8,7 +8,7 @@ const Contact = () => {
         <div>
             <Heading></Heading>
             <ContactDetails></ContactDetails>
-            <ContactMap></ContactMap>
+            {/* <ContactMap></ContactMap> */}
         </div>
     );
 };

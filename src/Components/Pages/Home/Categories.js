@@ -3,21 +3,21 @@ import React from 'react';
 const Categories = () => {
     return (
         <>
-        <section class="py-5 py-md-11 bg-white">
-            <div class="container">
-                <div class="text-center mb-md-7 mb-4" data-aos="fade-up">
-                    <h1 class="mb-1">Trending Categories</h1>
-                    <p class="font-size-lg mb-0 text-capitalize">Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+        <section className="py-5 py-md-11 bg-white">
+            <div className="container">
+                <div className="text-center mb-md-7 mb-4" data-aos="fade-up">
+                    <h1 className="mb-1">Trending Categories</h1>
+                    <p className="font-size-lg mb-0 text-capitalize">Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
                 </div>
 
-                <div class="mx-n4" data-flickity='{"pageDots": false, "prevNextButtons": true, "cellAlign": "left", "wrapAround": true, "imagesLoaded": true}'>
-                    <div class="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
+                <div className="mx-n4" data-flickity='{"pageDots": false, "prevNextButtons": true, "cellAlign": "left", "wrapAround": true, "imagesLoaded": true}'>
+                    <div className="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
                         
-                        <a href="course-list-v3.html" class="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
+                        <a href="course-list-v3.html" className="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
                         
-                            <div class="position-relative" style={{color: "#f0e7f3"  }}>
-                                <div class="position-absolute bottom-0 right-0 left-0" style={{color: " #B94EE4"  }} >
-                                    <i class="fas fa-bezier-curve"></i>
+                            <div className="position-relative" style={{color: "#f0e7f3"  }}>
+                                <div className="position-absolute bottom-0 right-0 left-0" style={{color: " #B94EE4"  }} >
+                                    <i className="fas fa-bezier-curve"></i>
                                 </div>
                                 
                                 <svg width={ '116'} height={'82'} viewBox={'0 0 116 82'} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,19 +27,19 @@ const Categories = () => {
                             </div>
 
                         
-                            <div class="card-footer px-0 pb-0 pt-6">
-                                <h5 class="mb-0 line-clamp-1">Design</h5>
-                                <p class="mb-0 line-clamp-1">Over 960 Courses</p>
+                            <div className="card-footer px-0 pb-0 pt-6">
+                                <h5 className="mb-0 line-clamp-1">Design</h5>
+                                <p className="mb-0 line-clamp-1">Over 960 Courses</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
+                    <div className="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
                         
-                        <a href="course-list-v3.html" class="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
+                        <a href="course-list-v3.html" className="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
                         
-                            <div class="position-relative" style={{color: "#F55101"  }}>
-                                <div class="position-absolute bottom-0 right-0 left-0" style={{color: '#B94EE4'  }} >
-                                    <i class="fas fa-briefcase"></i>
+                            <div className="position-relative" style={{color: "#F55101"  }}>
+                                <div className="position-absolute bottom-0 right-0 left-0" style={{color: '#B94EE4'  }} >
+                                    <i className="fas fa-briefcase"></i>
                                 </div>
                                 
                                 <svg width={ '116'} height={'82'} viewBox={'0 0 116 82'} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,19 +49,19 @@ const Categories = () => {
                             </div>
 
                         
-                            <div class="card-footer px-0 pb-0 pt-6">
-                                <h5 class="mb-0 line-clamp-1">Design</h5>
-                                <p class="mb-0 line-clamp-1">Over 960 Courses</p>
+                            <div className="card-footer px-0 pb-0 pt-6">
+                                <h5 className="mb-0 line-clamp-1">Design</h5>
+                                <p className="mb-0 line-clamp-1">Over 960 Courses</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
+                    <div className="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
                         
-                        <a href="course-list-v3.html" class="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
+                        <a href="course-list-v3.html" className="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
                         
-                            <div class="position-relative" style={{color: "#f0e7f3"  }}>
-                                <div class="position-absolute bottom-0 right-0 left-0" style={{color: "#B94EE4"  }} >
-                                    <i class="fas fa-laptop-code"></i>
+                            <div className="position-relative" style={{color: "#f0e7f3"  }}>
+                                <div className="position-absolute bottom-0 right-0 left-0" style={{color: "#B94EE4"  }} >
+                                    <i className="fas fa-laptop-code"></i>
                                 </div>
                                 
                                 <svg width={ '116'} height={'82'} viewBox={'0 0 116 82'} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,19 +71,19 @@ const Categories = () => {
                             </div>
 
                         
-                            <div class="card-footer px-0 pb-0 pt-6">
-                                <h5 class="mb-0 line-clamp-1">Design</h5>
-                                <p class="mb-0 line-clamp-1">Over 960 Courses</p>
+                            <div className="card-footer px-0 pb-0 pt-6">
+                                <h5 className="mb-0 line-clamp-1">Design</h5>
+                                <p className="mb-0 line-clamp-1">Over 960 Courses</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
+                    <div className="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
                         
-                        <a href="course-list-v3.html" class="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
+                        <a href="course-list-v3.html" className="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
                         
-                            <div class="position-relative" style={{color: "#f0e7f3"  }}>
-                                <div class="position-absolute bottom-0 right-0 left-0" style={{color: " #B94EE4"  }} >
-                                    <i class="fas fa-bezier-curve"></i>
+                            <div className="position-relative" style={{color: "#f0e7f3"  }}>
+                                <div className="position-absolute bottom-0 right-0 left-0" style={{color: " #B94EE4"  }} >
+                                    <i className="fas fa-bezier-curve"></i>
                                 </div>
                                 
                                 <svg width={ '116'} height={'82'} viewBox={'0 0 116 82'} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,19 +93,19 @@ const Categories = () => {
                             </div>
 
                         
-                            <div class="card-footer px-0 pb-0 pt-6">
-                                <h5 class="mb-0 line-clamp-1">Design</h5>
-                                <p class="mb-0 line-clamp-1">Over 960 Courses</p>
+                            <div className="card-footer px-0 pb-0 pt-6">
+                                <h5 className="mb-0 line-clamp-1">Design</h5>
+                                <p className="mb-0 line-clamp-1">Over 960 Courses</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
+                    <div className="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
                         
-                        <a href="course-list-v3.html" class="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
+                        <a href="course-list-v3.html" className="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
                         
-                            <div class="position-relative" style={{color: "#f0e7f3"  }}>
-                                <div class="position-absolute bottom-0 right-0 left-0" style={{color: " #B94EE4"  }} >
-                                    <i class="fas fa-bezier-curve"></i>
+                            <div className="position-relative" style={{color: "#f0e7f3"  }}>
+                                <div className="position-absolute bottom-0 right-0 left-0" style={{color: " #B94EE4"  }} >
+                                    <i className="fas fa-bezier-curve"></i>
                                 </div>
                                 
                                 <svg width={ '116'} height={'82'} viewBox={'0 0 116 82'} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,19 +115,19 @@ const Categories = () => {
                             </div>
 
                         
-                            <div class="card-footer px-0 pb-0 pt-6">
-                                <h5 class="mb-0 line-clamp-1">Design</h5>
-                                <p class="mb-0 line-clamp-1">Over 960 Courses</p>
+                            <div className="card-footer px-0 pb-0 pt-6">
+                                <h5 className="mb-0 line-clamp-1">Design</h5>
+                                <p className="mb-0 line-clamp-1">Over 960 Courses</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
+                    <div className="col-6 col-lg-4 col-xl-3 pt-2 pb-4 px-md-4" data-aos="fade-up" data-aos-delay="50">
                         
-                        <a href="course-list-v3.html" class="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
+                        <a href="course-list-v3.html" className="card icon-category card-border-hover icon-category border shadow-dark-hover p-md-5 p-3 text-center lift">
                         
-                            <div class="position-relative" style={{color: "#f0e7f3"  }}>
-                                <div class="position-absolute bottom-0 right-0 left-0" style={{color: " #B94EE4"  }} >
-                                    <i class="fas fa-bezier-curve"></i>
+                            <div className="position-relative" style={{color: "#f0e7f3"  }}>
+                                <div className="position-absolute bottom-0 right-0 left-0" style={{color: " #B94EE4"  }} >
+                                    <i className="fas fa-bezier-curve"></i>
                                 </div>
                                 
                                 <svg width={ '116'} height={'82'} viewBox={'0 0 116 82'} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,9 +137,9 @@ const Categories = () => {
                             </div>
 
                         
-                            <div class="card-footer px-0 pb-0 pt-6">
-                                <h5 class="mb-0 line-clamp-1">Design</h5>
-                                <p class="mb-0 line-clamp-1">Over 960 Courses</p>
+                            <div className="card-footer px-0 pb-0 pt-6">
+                                <h5 className="mb-0 line-clamp-1">Design</h5>
+                                <p className="mb-0 line-clamp-1">Over 960 Courses</p>
                             </div>
                         </a>
                     </div>
