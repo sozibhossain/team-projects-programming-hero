@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Gallery = () => {
     return (
@@ -9,12 +10,14 @@ const Gallery = () => {
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-scroll justify-content-center">
                             <li class="breadcrumb-item">
-                                <a class="text-gray-800" href="#">
+                            <NavLink className="nav-link px-xl-4" to="/"  id="navbarLandings">
                                     Home
-                                </a>
+                            </NavLink>
                             </li>
                             <li class="breadcrumb-item text-gray-800 active" aria-current="page">
+                                <NavLink className="nav-link px-xl-4" to="/gallery"  id="navbarLandings">
                                 Gallery
+                                </NavLink>
                             </li>
                         </ol>
                     </nav>
