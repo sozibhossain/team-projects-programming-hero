@@ -33,6 +33,7 @@ const BlogGrid = () => {
                         <div class="mb-4 mb-xl-0 ms-xl-6">
                             <form class="">
                                 <div class="input-group input-group-filter">
+                                <input class="form-control form-control-sm placeholder-dark border-end-0" type="search" placeholder="Search Our Blog" aria-label="Search"/>
                                     <div class="input-group-append">
                                         <button class="btn btn-sm btn-outline-white border-start-0 text-dark bg-transparent" type="submit">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

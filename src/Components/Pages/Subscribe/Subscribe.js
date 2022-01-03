@@ -14,7 +14,7 @@ const Subscribe = () => {
                         <div class="col-xl-6">
                             <form class="ms-xl-5">
                                 <div class="input-group d-block d-md-flex bg-white p-1 rounded">
-                                    {/* <input type="text" class="form-control w-100 w-md-auto form-control-sm rounded border-0 placeholder-1" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2"> */}
+                                    <input type="text" class="form-control w-100 w-md-auto form-control-sm rounded border-0 placeholder-1" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2"/>
                                     <div class="input-group-append ms-0">
                                         <button class="btn btn-sm btn-blue w-100 w-md-auto btn-wide rounded border-0" type="button" id="button-addon2">Subscribe</button>
                                     </div>

@@ -224,7 +224,6 @@ const ShoppingCart = () => {
         </div>
     </div>
 
-
     <section className="py-6 py-md-11" data-jarallax data-speed=".8" style={{backgroundImage: 'url(assets/img/illustrations/illustration-4.jpg)'}}>
                 <div className="container text-center py-xl-4" data-aos="fade-up">
                     <div className="row">

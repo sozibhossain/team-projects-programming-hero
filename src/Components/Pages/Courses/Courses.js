@@ -55,8 +55,8 @@ const Courses = () => {
 
                                     </Link>
                                 </div>
-
-                                <Link to="/course-single" className="card-img sk-thumbnail d-block">
+                                <Link to="/course-single" className="card-img sk-thumbnail d-block"></Link>
+                                <Link to="course-single-v5.html" className="card-img sk-thumbnail d-block">
                                     <img className="rounded shadow-light-lg" src="assets/img/products/product-1.jpg" alt="..."/>
                                 </Link>
 
