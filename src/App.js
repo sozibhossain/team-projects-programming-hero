@@ -6,6 +6,7 @@ import {
 import './App.css';
 import AboutUs from "./Components/Pages/About/AboutUs/AboutUs";
 import BlogGrid from "./Components/Pages/BlogGrid/BlogGrid";
+import Checkout from "./Components/Pages/Checkout/Checkout";
 import Contact from "./Components/Pages/Contact/Contact";
 import Home from "./Components/Pages/Home/Home";
 import Login from "./Components/Pages/Login/Login";
@@ -22,9 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />}>
             
           </Route>
-          <Route path="/about">
-            
-          </Route>
+          <Route path="/checkout" element={<Checkout/>}></Route>
           <Route path="/registration" element={<Registration/>}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/" element={<Home />}></Route>

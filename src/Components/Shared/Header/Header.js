@@ -342,7 +342,7 @@ const Header = () => {
 
                     <div class="d-md-flex justify-content-between">
                         <a href="#" class="d-block d-md-inline-block mb-4 mb-md-0 btn btn-primary btn-sm-wide">VIEW CART</a>
-                        <a href="#" class="d-block d-md-inline-block btn btn-teal btn-sm-wide text-white">CHECKOUT</a>
+                        <Link to="/checkout" class="d-block d-md-inline-block btn btn-teal btn-sm-wide text-white">CHECKOUT</Link>
                     </div>
                 </div>
             </div>
