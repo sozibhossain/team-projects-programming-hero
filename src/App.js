@@ -14,6 +14,7 @@ import Gallery from "./Components/Pages/Gallery/Gallery";
 import Home from "./Components/Pages/Home/Home";
 import Login from "./Components/Pages/Login/Login";
 import Registration from "./Components/Pages/Registration/Registration";
+import ShoppingCart from "./Components/Pages/ShoppingCart/ShoppingCart";
 import TermsOfService from "./Components/Pages/TermsOfService/TermsOfService";
 import Footer from "./Components/Shared/Footer/Footer";
 import Header from "./Components/Shared/Header/Header";
@@ -36,6 +37,7 @@ function App() {
           <Route path="/courses" element={<Courses />}></Route>
           <Route path="/termsofservice" element={<TermsOfService/>}></Route>
           <Route path="/gallery" element={<Gallery/>}></Route>
+          <Route path="/shopping-cart" element={<ShoppingCart/>}></Route>
         </Routes>
       <Footer></Footer>
     </Router>
