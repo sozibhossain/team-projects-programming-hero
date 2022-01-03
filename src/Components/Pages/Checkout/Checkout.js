@@ -1,10 +1,11 @@
 import React from 'react';
+import CheckoutFormAndOrder from './CheckoutFormAndOrder';
 
 const Checkout = () => {
     return (
         <div>
     {/* =========================PAGE TITLE========================= */}
-    <header class="py-8 py-md-10" style="background-image: none;">
+    <header class="py-8 py-md-10">
         <div class="container text-center py-xl-2">
             <h1 class="display-4 fw-semi-bold mb-0">Shop Checkout</h1>
             <nav aria-label="breadcrumb">
@@ -23,6 +24,7 @@ const Checkout = () => {
         
         <img class="d-none img-fluid" src="...html" alt="..."/>
     </header>
+    <CheckoutFormAndOrder></CheckoutFormAndOrder>
         </div>
     );
 };

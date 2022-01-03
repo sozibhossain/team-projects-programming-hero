@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -17,34 +18,34 @@ const Footer = () => {
                         </p>
 
                         <div className="mb-4">
-                            <a href="tel:1234567890" className="text-gray-800 font-size-sm-alone">123 456 7890</a>
+                            <Link to="tel:1234567890" className="text-gray-800 font-size-sm-alone">123 456 7890</Link>
                         </div>
 
                         <div className="mb-4">
-                            <a href="mailto:support@skola.com" className="text-gray-800 font-size-sm-alone">support@skola.com</a>
+                            <Link to="mailto:support@skola.com" className="text-gray-800 font-size-sm-alone">support@skola.com</Link>
                         </div>
 
                         {/* <!-- Social --> */}
                         <ul className="list-unstyled list-inline list-social mb-4 mb-md-0 mx-n2">
                             <li className="list-inline-item list-social-item">
-                                <a href="#" className="text-decoration-none w-36 h-36 bg-white-hover-10 rounded-circle d-flex align-items-center justify-content-center">
+                                <Link to="#" className="text-decoration-none w-36 h-36 bg-white-hover-10 rounded-circle d-flex align-items-center justify-content-center">
                                     <i className="fab fa-facebook-f"></i>
-                                </a>
+                                </Link>
                             </li>
                             <li className="list-inline-item list-social-item">
-                                <a href="#" className="text-decoration-none w-36 h-36 bg-white-hover-10 rounded-circle d-flex align-items-center justify-content-center">
+                                <Link to="#" className="text-decoration-none w-36 h-36 bg-white-hover-10 rounded-circle d-flex align-items-center justify-content-center">
                                     <i className="fab fa-twitter"></i>
-                                </a>
+                                </Link>
                             </li>
                             <li className="list-inline-item list-social-item">
-                                <a href="#" className="text-decoration-none w-36 h-36 bg-white-hover-10 rounded-circle d-flex align-items-center justify-content-center">
+                                <Link to="#" className="text-decoration-none w-36 h-36 bg-white-hover-10 rounded-circle d-flex align-items-center justify-content-center">
                                     <i className="fab fa-instagram"></i>
-                                </a>
+                                </Link>
                             </li>
                             <li className="list-inline-item list-social-item">
-                                <a href="#" className="text-decoration-none w-36 h-36 bg-white-hover-10 rounded-circle d-flex align-items-center justify-content-center">
+                                <Link to="#" className="text-decoration-none w-36 h-36 bg-white-hover-10 rounded-circle d-flex align-items-center justify-content-center">
                                     <i className="fab fa-linkedin-in"></i>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -77,44 +78,44 @@ const Footer = () => {
                                 {/* <!-- List --> */}
                                 <ul className="list-unstyled text-gray-800 font-size-sm-alone mb-6 mb-md-8 mb-lg-0">
                                     <li className="mb-3">
-                                        <a href="about-v1.html" className="text-reset">
+                                        <Link to="about-v1.html" className="text-reset">
                                             Our Company
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="about-v2.html" className="text-reset">
+                                        <Link to="about-v2.html" className="text-reset">
                                             About Us
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="contact-us.html" className="text-reset">
+                                        <Link to="contact-us.html" className="text-reset">
                                             Contact Us
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="contact-us.html" className="text-reset">
+                                        <Link to="contact-us.html" className="text-reset">
                                             Community
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="course-list-v1.html" className="text-reset">
+                                        <Link to="course-list-v1.html" className="text-reset">
                                             Student Perks
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="blog-grid-v1.html" className="text-reset">
+                                        <Link to="blog-grid-v1.html" className="text-reset">
                                             Blog
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="pricing.html" className="text-reset">
+                                        <Link to="pricing.html" className="text-reset">
                                             Affiliate Program
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="contact-us.html" className="text-reset">
+                                        <Link to="contact-us.html" className="text-reset">
                                             Careers
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -149,49 +150,49 @@ const Footer = () => {
                                 {/* <!-- List --> */}
                                 <ul className="list-unstyled text-gray-800 font-size-sm-alone mb-6 mb-md-8 mb-lg-0">
                                     <li className="mb-3">
-                                        <a href="course-list-v2.html" className="text-reset">
+                                        <Link to="course-list-v2.html" className="text-reset">
                                             HTML
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="course-list-v2.html" className="text-reset">
+                                        <Link to="course-list-v2.html" className="text-reset">
                                             CSS
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="course-list-v6.html" className="text-reset">
+                                        <Link to="course-list-v6.html" className="text-reset">
                                             Design
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="course-list-v5.html" className="text-reset">
+                                        <Link to="course-list-v5.html" className="text-reset">
                                             JavaScript
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="course-list-v4.html" className="text-reset">
+                                        <Link to="course-list-v4.html" className="text-reset">
                                             Ruby
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="course-list-v1.html" className="text-reset">
+                                        <Link to="course-list-v1.html" className="text-reset">
                                             PHP
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="course-list-v3.html" className="text-reset">
+                                        <Link to="course-list-v3.html" className="text-reset">
                                             Android
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="course-list-v4.html" className="text-reset">
+                                        <Link to="course-list-v4.html" className="text-reset">
                                             Development Tools
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="course-list-v6.html" className="text-reset">
+                                        <Link to="course-list-v6.html" className="text-reset">
                                             Business
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -226,34 +227,34 @@ const Footer = () => {
                                 {/* <!-- List --> */}
                                 <ul className="list-unstyled text-gray-800 font-size-sm-alone mb-0">
                                     <li className="mb-3">
-                                        <a href="lesson-single-v1.html" className="text-reset">
+                                        <Link to="lesson-single-v1.html" className="text-reset">
                                             Web Design
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="lesson-single-v2.html" className="text-reset">
+                                        <Link to="lesson-single-v2.html" className="text-reset">
                                             Web Development
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="lesson-single-v1.html" className="text-reset">
+                                        <Link to="lesson-single-v1.html" className="text-reset">
                                             Rails Development
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="lesson-single-v2.html" className="text-reset">
+                                        <Link to="lesson-single-v2.html" className="text-reset">
                                             PHP Development
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="lesson-single-v1.html" className="text-reset">
+                                        <Link to="lesson-single-v1.html" className="text-reset">
                                             Android Development
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="lesson-single-v2.html" className="text-reset">
+                                        <Link to="lesson-single-v2.html" className="text-reset">
                                             Starting a Business
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -288,24 +289,24 @@ const Footer = () => {
                                 {/* <!-- List --> */}
                                 <ul className="list-unstyled text-gray-800 font-size-sm-alone mb-0">
                                     <li className="mb-3">
-                                        <a href="docs/index.html" className="text-reset">
+                                        <Link to="docs/index.html" className="text-reset">
                                             Documentation
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="docs/index.html" className="text-reset">
+                                        <Link to="docs/index.html" className="text-reset">
                                             Forums
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="docs/index.html" className="text-reset">
+                                        <Link to="docs/index.html" className="text-reset">
                                             Language Packs
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="docs/changelog.html" className="text-reset">
+                                        <Link to="docs/changelog.html" className="text-reset">
                                             Release Status
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -316,22 +317,22 @@ const Footer = () => {
                         <div className="pb-5 pt-6 py-md-4 text-center text-xl-start d-flex flex-column d-md-block d-xl-flex flex-xl-row align-items-center">
                             <p className="text-gray-800 font-size-sm-alone d-block mb-0 mb-md-2 mb-xl-0 order-1 order-md-0 px-9 px-md-0">Copyright © 2021 LMS. All Right Reserved.</p>
 
-                            <div className="ms-xl-auto d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-center">
+                            <div className="ms-xl-auto d-flex flex-column flex-md-column align-items-stretch align-items-md-center justify-content-center">
                                 <ul className="navbar-nav flex-row flex-wrap font-size-sm-alone mb-3 mb-md-0 mx-n4 me-md-5 justify-content-center justify-content-lg-start order-1 order-md-0">
                                     <li className="nav-item py-2 py-md-0 px-0 border-top-0">
-                                        <a href="index.html" className="nav-link px-4 fw-normal text-gray-800">Home</a>
+                                        <Link to="index.html" className="nav-link px-4 fw-normal text-gray-800">Home</Link>
                                     </li>
                                     <li className="nav-item py-2 py-md-0 px-0 border-top-0">
-                                        <a href="terms-of-service.html" className="nav-link px-4 fw-normal text-gray-800">Site Map</a>
+                                        <Link to="terms-of-service.html" className="nav-link px-4 fw-normal text-gray-800">Site Map</Link>
                                     </li>
                                     <li className="nav-item py-2 py-md-0 px-0 border-top-0">
-                                        <a href="terms-of-service.html" className="nav-link px-4 fw-normal text-gray-800">Privacy policy</a>
+                                        <Link to="terms-of-service.html" className="nav-link px-4 fw-normal text-gray-800">Privacy policy</Link>
                                     </li>
                                     <li className="nav-item py-2 py-md-0 px-0 border-top-0">
-                                        <a href="terms-of-service.html" className="nav-link px-4 fw-normal text-gray-800">Web Use Policy</a>
+                                        <Link to="terms-of-service.html" className="nav-link px-4 fw-normal text-gray-800">Web Use Policy</Link>
                                     </li>
                                     <li className="nav-item py-2 py-md-0 px-0 border-top-0">
-                                        <a href="terms-of-service.html" className="nav-link px-4 fw-normal text-gray-800">Cookie Policy</a>
+                                        <Link to="terms-of-service.html" className="nav-link px-4 fw-normal text-gray-800">Cookie Policy</Link>
                                     </li>
                                 </ul>
 
