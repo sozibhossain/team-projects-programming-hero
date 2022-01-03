@@ -1,222 +1,253 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <>
-            <div className="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
-            <div className="modal-dialog modal-dialog-centered" role="document">
-                <div className="modal-content">
-                <div className="modal-body">
-                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                    </button>
 
-                    <h2 className="fw-bold text-center mb-1" id="modalExampleTitle">
-                    Schedule a demo with us
-                    </h2>
-                    <p className="font-size-lg text-center text-muted mb-6 mb-md-8">
-                    We can help you solve company communication.
-                    </p>
+        {/* <!-- MODALS
+    ================================================== -->
+    <!-- Modal Sidebar account --> */}
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
 
-                    <form>
-                    <div className="row">
-                        <div className="col-12 col-md-6">
-                        <div className="form-label-group">
-                            <input type="text" className="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name"/>
-                            <label for="registrationFirstNameModal">First name</label>
-                        </div>
+            {/* <!-- Close --> */}
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
 
-                        </div>
-                        <div className="col-12 col-md-6">
+            {/* <!-- Heading --> */}
+            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
 
-                        <div className="form-label-group">
-                            <input type="text" className="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name"/>
-                            <label for="registrationLastNameModal">Last name</label>
-                        </div>
+            {/* <!-- Text --> */}
+            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
 
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12 col-md-6">
+            {/* <!-- Form --> */}
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
 
-                        <div className="form-label-group">
-                            <input type="email" className="form-control form-control-flush" id="registrationEmailModal" placeholder="Email"/>
-                            <label for="registrationEmailModal">Email</label>
-                        </div>
+                  {/* <!-- First name --> */}
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name"/>
+                    <label for="registrationFirstNameModal">First name</label>
+                  </div>
 
-                        </div>
-                        <div className="col-12 col-md-6">
+                </div>
+                <div class="col-12 col-md-6">
 
-                        <div className="form-label-group">
-                            <input type="password" className="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password"/>
-                            <label for="registrationPasswordModal">Password</label>
-                        </div>
+                  {/* <!-- Last name --> */}
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name"/>
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
 
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12">
-                        <button className="btn btn-block btn-primary mt-3 lift">
-                            Request a demo
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  {/* <!-- Email --> */}
+                  <div class="form-label-group">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email"/>
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                  {/* <!-- Password --> */}
+                  <div class="form-label-group">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password"/>
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+
+                  {/* <!-- Submit --> */}
+                  <button class="btn btn-block btn-primary mt-3 lift">
+                    Request a demo
+                  </button>
+
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal-sidebar left fade-left fade" id="accountModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                {/* <!-- Signin --> */}
+                <div class="collapse show" id="collapseSignin" data-bs-parent="#accountModal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Log In to Your Skola Account!</h5>
+                        <button type="button" class="close text-primary" data-bs-dismiss="modal" aria-label="Close">
+                            {/* <!-- Icon --> */}
+                            <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
+                                <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
+                            </svg>
+
                         </button>
-
-                        </div>
                     </div>
-                    </form>
 
+                    <div class="modal-body">
+                        {/* <!-- Form Signin --> */}
+                        <form class="mb-5">
+
+                            {/* <!-- Email --> */}
+                            <div class="form-group mb-5">
+                                <label for="modalSigninEmail">
+                                    Username or Email
+                                </label>
+                                <input type="email" class="form-control" id="modalSigninEmail" placeholder="creativelayers"/>
+                            </div>
+
+                            {/* <!-- Password --> */}
+                            <div class="form-group mb-5">
+                                <label for="modalSigninPassword">
+                                    Password
+                                </label>
+                                <input type="password" class="form-control" id="modalSigninPassword" placeholder="**********"/>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-5 font-size-sm">
+                                <div class="form-check">
+                                    <input class="form-check-input text-gray-800" type="checkbox" id="autoSizingCheck"/>
+                                    <label class="form-check-label text-gray-800" for="autoSizingCheck">
+                                        Remember me
+                                    </label>
+                                </div>
+
+                                <div class="ms-auto">
+                                    <a class="text-gray-800" data-bs-toggle="collapse" href="#collapseForgotPassword" role="button" aria-expanded="false" aria-controls="collapseForgotPassword">Forgot Password</a>
+                                </div>
+                            </div>
+
+                            {/* <!-- Submit --> */}
+                            <button class="btn btn-block btn-primary" type="submit">
+                                LOGIN
+                            </button>
+                        </form>
+
+                        {/* <!-- Text --> */}
+                        <p class="mb-0 font-size-sm text-center">
+                            Don't have an account? <a class="text-underline" data-bs-toggle="collapse" href="#collapseSignup" role="button" aria-expanded="false" aria-controls="collapseSignup">Sign up</a>
+                        </p>
+                    </div>
                 </div>
+
+                {/* <!-- Signup --> */}
+                <div class="collapse" id="collapseSignup" data-bs-parent="#accountModal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign Up and Start Learning!</h5>
+                        <button type="button" class="close text-primary" data-bs-dismiss="modal" aria-label="Close">
+                            {/* <!-- Icon --> */}
+                            <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
+                                <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
+                            </svg>
+
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        {/* <!-- Form Signup --> */}
+                        <form class="mb-5">
+
+                            {/* <!-- Username --> */}
+                            <div class="form-group mb-5">
+                                <label for="modalSignupUsername">
+                                    Username
+                                </label>
+                                <input type="text" class="form-control" id="modalSignupUsername" placeholder="John"/>
+                            </div>
+
+                            {/* <!-- Email --> */}
+                            <div class="form-group mb-5">
+                                <label for="modalSignupEmail">
+                                    Username or Email
+                                </label>
+                                <input type="email" class="form-control" id="modalSignupEmail" placeholder="johndoe@creativelayers.com"/>
+                            </div>
+
+                            {/* <!-- Password --> */}
+                            <div class="form-group mb-5">
+                                <label for="modalSignupPassword">
+                                    Password
+                                </label>
+                                <input type="password" class="form-control" id="modalSignupPassword" placeholder="**********"/>
+                            </div>
+
+                            {/* <!-- Submit --> */}
+                            <button class="btn btn-block btn-primary" type="submit">
+                                SIGN UP
+                            </button>
+
+                        </form>
+
+                        {/* <!-- Text --> */}
+                        <p class="mb-0 font-size-sm text-center">
+                            Already have an account? <a class="text-underline" data-bs-toggle="collapse" href="#collapseSignin" role="button" aria-expanded="true" aria-controls="collapseSignin">Log In</a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            </div>
 
-            <div className="modal modal-sidebar left fade-left fade" id="accountModal">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="collapse show" id="collapseSignin" data-bs-parent="#accountModal">
-                            <div className="modal-header">
-                                <h5 className="modal-title">Log In to Your Skola Account!</h5>
-                                <button type="button" className="close text-primary" data-bs-dismiss="modal" aria-label="Close">
-                                    <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
-                                        <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
-                                    </svg>
+                {/* <!-- Forgot Password --> */}
+                <div class="collapse" id="collapseForgotPassword" data-bs-parent="#accountModal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Recover password!</h5>
+                        <button type="button" class="close text-primary" data-bs-dismiss="modal" aria-label="Close">
+                            {/* <!-- Icon --> */}
+                            <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
+                                <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
+                            </svg>
 
-                                </button>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        {/* <!-- Form Recover Password --> */}
+                        <form class="mb-5">
+                            {/* <!-- Email --> */}
+                            <div class="form-group">
+                                <label for="modalForgotpasswordEmail">
+                                    Email
+                                </label>
+                                <input type="email" class="form-control" id="modalForgotpasswordEmail" placeholder="johndoe@creativelayers.com"/>
                             </div>
 
-                            <div className="modal-body">
-                                <form className="mb-5">
+                            {/* <!-- Submit --> */}
+                            <button class="btn btn-block btn-primary" type="submit">
+                                RECOVER PASSWORD
+                            </button>
+                        </form>
 
-                                    <div className="form-group mb-5">
-                                        <label for="modalSigninEmail">
-                                            Username or Email
-                                        </label>
-                                        <input type="email" className="form-control" id="modalSigninEmail" placeholder="creativelayers"/>
-                                    </div>
-
-                                    <div className="form-group mb-5">
-                                        <label for="modalSigninPassword">
-                                            Password
-                                        </label>
-                                        <input type="password" className="form-control" id="modalSigninPassword" placeholder="**********"/>
-                                    </div>
-
-                                    <div className="d-flex align-items-center mb-5 font-size-sm">
-                                        <div className="form-check">
-                                            <input className="form-check-input text-gray-800" type="checkbox" id="autoSizingCheck"/>
-                                            <label className="form-check-label text-gray-800" for="autoSizingCheck">
-                                                Remember me
-                                            </label>
-                                        </div>
-
-                                        <div className="ms-auto">
-                                            <a className="text-gray-800" data-bs-toggle="collapse" href="#collapseForgotPassword" role="button" aria-expanded="false" aria-controls="collapseForgotPassword">Forgot Password</a>
-                                        </div>
-                                    </div>
-                                    <button className="btn btn-block btn-primary" type="submit">
-                                        LOGIN
-                                    </button>
-                                </form>
-                                <p className="mb-0 font-size-sm text-center">
-                                    Don't have an account? <a className="text-underline" data-bs-toggle="collapse" href="#collapseSignup" role="button" aria-expanded="false" aria-controls="collapseSignup">Sign up</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="collapse" id="collapseSignup" data-bs-parent="#accountModal">
-                            <div className="modal-header">
-                                <h5 className="modal-title">Sign Up and Start Learning!</h5>
-                                <button type="button" className="close text-primary" data-bs-dismiss="modal" aria-label="Close">
-                                    <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
-                                        <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
-                                    </svg>
-
-                                </button>
-                            </div>
-
-                            <div className="modal-body">
-                                <form className="mb-5">
-                                    <div className="form-group mb-5">
-                                        <label for="modalSignupUsername">
-                                            Username
-                                        </label>
-                                        <input type="text" className="form-control" id="modalSignupUsername" placeholder="John"/>
-                                    </div>
-
-                                    {/* <!-- Email --> */}
-                                    <div className="form-group mb-5">
-                                        <label for="modalSignupEmail">
-                                            Username or Email
-                                        </label>
-                                        <input type="email" className="form-control" id="modalSignupEmail" placeholder="johndoe@creativelayers.com"/>
-                                    </div>
-
-                                    {/* <!-- Password --> */}
-                                    <div className="form-group mb-5">
-                                        <label for="modalSignupPassword">
-                                            Password
-                                        </label>
-                                        <input type="password" className="form-control" id="modalSignupPassword" placeholder="**********"/>
-                                    </div>
-
-                                    {/* <!-- Submit --> */}
-                                    <button className="btn btn-block btn-primary" type="submit">
-                                        SIGN UP
-                                    </button>
-
-                                </form>
-
-                                {/* <!-- Text --> */}
-                                <p className="mb-0 font-size-sm text-center">
-                                    Already have an account? <a className="text-underline" data-bs-toggle="collapse" href="#collapseSignin" role="button" aria-expanded="true" aria-controls="collapseSignin">Log In</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* <!-- Forgot Password --> */}
-                        <div className="collapse" id="collapseForgotPassword" data-bs-parent="#accountModal">
-                            <div className="modal-header">
-                                <h5 className="modal-title">Recover password!</h5>
-                                <button type="button" className="close text-primary" data-bs-dismiss="modal" aria-label="Close">
-                                 
-                                    <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
-                                        <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
-                                    </svg>
-
-                                </button>
-                            </div>
-
-                            <div className="modal-body">
-                                {/* <!-- Form Recover Password --> */}
-                                <form className="mb-5">
-                                    {/* <!-- Email --> */}
-                                    <div className="form-group">
-                                        <label for="modalForgotpasswordEmail">
-                                            Email
-                                        </label>
-                                        <input type="email" className="form-control" id="modalForgotpasswordEmail" placeholder="johndoe@creativelayers.com"/>
-                                    </div>
-
-                                    {/* <!-- Submit --> */}
-                                    <button className="btn btn-block btn-primary" type="submit">
-                                        RECOVER PASSWORD
-                                    </button>
-                                </form>
-
-                                {/* <!-- Text --> */}
-                                <p className="mb-0 font-size-sm text-center">
-                                    Remember your password? <a className="text-underline" data-bs-toggle="collapse" href="#collapseSignin" role="button" aria-expanded="false" aria-controls="collapseSignin">Log In</a>
-                                </p>
-                            </div>
-                        </div>
+                        {/* <!-- Text --> */}
+                        <p class="mb-0 font-size-sm text-center">
+                            Remember your password? <a class="text-underline" data-bs-toggle="collapse" href="#collapseSignin" role="button" aria-expanded="false" aria-controls="collapseSignin">Log In</a>
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            {/* <!-- Modal Sidebar cart --> */}
+    {/* <!-- Modal Sidebar cart --> */}
     <div class="modal modal-sidebar left fade-left fade" id="cartModal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -317,169 +348,70 @@ const Header = () => {
             </div>
         </div>
     </div>
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header mb-4">
-                            <h5 className="modal-title">Your Shopping Cart</h5>
-                            <button type="button" className="close text-primary" data-bs-dismiss="modal" aria-label="Close">
-                                <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
-                                    <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
-                                </svg>
 
-                            </button>
-                        </div>
+       {/*  <!-- NAVBAR
+    ================================================== --> */}
+    <header class="navbar navbar-expand-xl navbar-dark py-4" >
+        <div class="container">
 
-                        <div className="modal-body">
-                            <ul className="list-group list-group-flush mb-5">
-                                <li className="list-group-item border-bottom py-0">
-                                    <div className="d-flex py-5">
-                                        <div className="bg-gray-200 w-60p h-60p rounded-circle overflow-hidden"></div>
+            {/* <!-- Brand --> */}
+            <a class="navbar-brand me-0" href="index.html">
+                <img src="assets/img/brand.svg" class="navbar-brand-img" alt="..."/>
+            </a>
 
-                                        <div className="flex-grow-1 mt-1 ms-4">
-                                            <h6 className="fw-normal mb-0">Basic of Nature</h6>
-                                            <div className="font-size-sm">1 × $18.00</div>
-                                        </div>
+            {/* <!-- Collapse --> */}
+            <div class="collapse navbar-collapse z-index-lg" id="navbarCollapse">
 
-                                        <a href="#" className="d-inline-flex text-secondary">
-                                            
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.0469 0H5.95294C5.37707 0 4.90857 0.4685 4.90857 1.04437V3.02872H6.16182V1.25325H9.83806V3.02872H11.0913V1.04437C11.0913 0.4685 10.6228 0 10.0469 0Z" fill="currentColor"/>
-                                                <path d="M11.0492 5.51652L9.7968 5.47058L9.52527 12.8857L10.7777 12.9315L11.0492 5.51652Z" fill="currentColor"/>
-                                                <path d="M8.62666 5.49353H7.37341V12.9087H8.62666V5.49353Z" fill="currentColor"/>
-                                                <path d="M6.47453 12.8855L6.203 5.47034L4.95056 5.51631L5.22212 12.9314L6.47453 12.8855Z" fill="currentColor"/>
-                                                <path d="M0.543091 2.4021V3.65535H1.849L2.885 15.4283C2.9134 15.7519 3.18434 16 3.50912 16H12.4697C12.7946 16 13.0657 15.7517 13.0939 15.4281L14.1299 3.65535H15.4569V2.4021H0.543091ZM11.8958 14.7468H4.08293L3.10706 3.65535H12.8719L11.8958 14.7468Z" fill="currentColor"/>
-                                            </svg>
+                {/* <!-- Toggler --> */}
+                <button class="navbar-toggler outline-0 text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    {/* <!-- Icon --> */}
+                    <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
+                        <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
+                    </svg>
 
-                                        </a>
-                                    </div>
-                                </li>
+                </button>
 
-                                <li className="list-group-item border-bottom py-0">
-                                    <div className="d-flex py-5">
-                                        <div className="bg-gray-200 w-60p h-60p rounded-circle overflow-hidden"></div>
+                {/* <!-- Navigation --> */}
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ">
+                        <Link class="nav-link px-xl-4" to="/" id="navbarLandings">
+                            Home
+                        </Link>
+                       
+                    </li>
+                    <li class="nav-item ">
+                        <Link class="nav-link px-xl-4" to="/courses" id="navbarLandings">
+                            Courses
+                        </Link>
+                       
+                    </li>
+                    <li class="nav-item ">
+                        <Link class="nav-link px-xl-4" to="/blog" id="navbarLandings">
+                            Blog
+                        </Link>
+                       
+                    </li>
 
-                                        <div className="flex-grow-1 mt-1 ms-4">
-                                            <h6 className="fw-normal mb-0">Color Harriet Tubman</h6>
-                                            <div className="font-size-sm">1 × $18.00</div>
-                                        </div>
-
-                                        <a href="#" className="d-inline-flex text-secondary">
-                                            
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.0469 0H5.95294C5.37707 0 4.90857 0.4685 4.90857 1.04437V3.02872H6.16182V1.25325H9.83806V3.02872H11.0913V1.04437C11.0913 0.4685 10.6228 0 10.0469 0Z" fill="currentColor"/>
-                                                <path d="M11.0492 5.51652L9.7968 5.47058L9.52527 12.8857L10.7777 12.9315L11.0492 5.51652Z" fill="currentColor"/>
-                                                <path d="M8.62666 5.49353H7.37341V12.9087H8.62666V5.49353Z" fill="currentColor"/>
-                                                <path d="M6.47453 12.8855L6.203 5.47034L4.95056 5.51631L5.22212 12.9314L6.47453 12.8855Z" fill="currentColor"/>
-                                                <path d="M0.543091 2.4021V3.65535H1.849L2.885 15.4283C2.9134 15.7519 3.18434 16 3.50912 16H12.4697C12.7946 16 13.0657 15.7517 13.0939 15.4281L14.1299 3.65535H15.4569V2.4021H0.543091ZM11.8958 14.7468H4.08293L3.10706 3.65535H12.8719L11.8958 14.7468Z" fill="currentColor"/>
-                                            </svg>
-
-                                        </a>
-                                    </div>
-                                </li>
-
-                                <li className="list-group-item border-bottom py-0">
-                                    <div className="d-flex py-5">
-                                        <div className="bg-gray-200 w-60p h-60p rounded-circle overflow-hidden"></div>
-
-                                        <div className="flex-grow-1 mt-1 ms-4">
-                                            <h6 className="fw-normal mb-0">Digital Photography</h6>
-                                            <div className="font-size-sm">1 × $18.00</div>
-                                        </div>
-
-                                        <a href="#" className="d-inline-flex text-secondary">
-                                           
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.0469 0H5.95294C5.37707 0 4.90857 0.4685 4.90857 1.04437V3.02872H6.16182V1.25325H9.83806V3.02872H11.0913V1.04437C11.0913 0.4685 10.6228 0 10.0469 0Z" fill="currentColor"/>
-                                                <path d="M11.0492 5.51652L9.7968 5.47058L9.52527 12.8857L10.7777 12.9315L11.0492 5.51652Z" fill="currentColor"/>
-                                                <path d="M8.62666 5.49353H7.37341V12.9087H8.62666V5.49353Z" fill="currentColor"/>
-                                                <path d="M6.47453 12.8855L6.203 5.47034L4.95056 5.51631L5.22212 12.9314L6.47453 12.8855Z" fill="currentColor"/>
-                                                <path d="M0.543091 2.4021V3.65535H1.849L2.885 15.4283C2.9134 15.7519 3.18434 16 3.50912 16H12.4697C12.7946 16 13.0657 15.7517 13.0939 15.4281L14.1299 3.65535H15.4569V2.4021H0.543091ZM11.8958 14.7468H4.08293L3.10706 3.65535H12.8719L11.8958 14.7468Z" fill="currentColor"/>
-                                            </svg>
-
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div className="d-flex mb-5">
-                                <h5 className="mb-0 me-auto">Order Subtotal</h5>
-                                <h5 className="mb-0">$121.87</h5>
-                            </div>
-
-                            <div className="d-md-flex justify-content-between">
-                                <a href="#" className="d-block d-md-inline-block mb-4 mb-md-0 btn btn-primary btn-sm-wide">VIEW CART</a>
-                                <a href="#" className="d-block d-md-inline-block btn btn-teal btn-sm-wide text-white">CHECKOUT</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <li class="nav-item ">
+                        <Link class="nav-link px-xl-4" to="/about-us" id="navbarLandings">
+                            About Us
+                        </Link>
+                    </li>
+                    <li class="nav-item ">
+                        <Link class="nav-link px-xl-4" to="/contact" id="navbarLandings">
+                            Contact Us
+                        </Link>
+                    </li>
+                    <li class="nav-item ">
+                        <Link class="nav-link px-xl-4" to="/login" id="navbarLandings">
+                            Login
+                        </Link>
+                    </li>
+                </ul>
             </div>
 
-        {/* 
-            <!-- NAVBAR
-            ================================================== --> */}
-            <header className="navbar navbar-expand-xl navbar-dark py-4" >
-                <div className="container">
-
-                    {/* <!-- Brand --> */}
-                    <a className="navbar-brand me-0" href="index.html">
-                        <img src="assets/img/brand.svg" className="navbar-brand-img" alt="..."/>
-                    </a>
-
-                    {/* <!-- Collapse --> */}
-                    <div className="collapse navbar-collapse z-index-lg" id="navbarCollapse">
-
-                        {/* <!-- Toggler --> */}
-                        <button className="navbar-toggler outline-0 text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                           
-                            <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
-                                <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
-                            </svg>
-
-                        </button>
-
-                        {/* <!-- Navigation --> */}
-                        <ul className="navbar-nav ms-auto">
-                            <li className="nav-item ">
-                                <NavLink className="nav-link px-xl-4" to="/" id="navbarLandings">
-                                    Home
-                                </NavLink>
-                            
-                            </li>
-                            <li className="nav-item ">
-                                <NavLink className="nav-link px-xl-4" to="/courses" id="navbarLandings">
-                                    Courses
-                                </NavLink>
-                            
-                            </li>
-                            <li className="nav-item ">
-                                <NavLink className="nav-link px-xl-4" to="/blog" id="navbarLandings">
-                                    Blog
-                                </NavLink>
-                            
-                            </li>
-
-                            <li className="nav-item ">
-                                <NavLink className="nav-link px-xl-4" to="/about"  id="navbarLandings">
-                                    About Us
-                                </NavLink>
-                            </li>
-                            <li className="nav-item ">
-                                <NavLink className="nav-link px-xl-4" to="/contact"  id="navbarLandings">
-                                    Contact Us
-                                </NavLink>
-                            </li>
-                            <li className="nav-item ">
-                                <NavLink className="nav-link px-xl-4" to="/login"  id="navbarLandings">
-                                    Login
-                                </NavLink>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* <!-- Search, Account & Cart --> */}
+            {/* <!-- Search, Account & Cart --> */}
             <ul class="navbar-nav flex-row ms-auto ms-xl-0 me-n2 me-md-n4 align-items-center">
                 <li class="nav-item border-0 px-0 d-none d-370-block d-xl-block">
                     <a class="nav-link d-flex px-3 px-md-4 search-mobile text-white-all icon-xs" data-bs-toggle="collapse" href="#collapseSearchMobile" role="button" aria-expanded="false" aria-controls="collapseSearchMobile">
@@ -529,12 +461,37 @@ const Header = () => {
                         </svg>
 
                     </a>
-                </li>   
+                </li>
+
+                <li class="nav-item border-0 px-0">
+                    {/* <!-- Button trigger cart modal --> */}
+                    <a href="#" class="nav-link d-flex px-3 px-md-4 position-relative text-white-all icon-xs" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <span class="badge badge-white text-primary rounded-circle fw-bold badge-float mt-n1 ms-n2 px-0 w-16">2</span>
+                        {/* <!-- Icon --> */}
+                        <svg width="13" height="15" viewBox="0 0 13 15" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.2422 3.51562H10.4567C10.2239 1.53873 8.53839 0 6.5 0C4.46161 0 2.7761 1.53873 2.54334 3.51562H0.757812C0.434199 3.51562 0.171875 3.77795 0.171875 4.10156V14.4141C0.171875 14.7377 0.434199 15 0.757812 15H12.2422C12.5658 15 12.8281 14.7377 12.8281 14.4141V4.10156C12.8281 3.77795 12.5658 3.51562 12.2422 3.51562ZM6.5 1.17188C7.89113 1.17188 9.04939 2.18716 9.27321 3.51562H3.72679C3.95062 2.18716 5.10887 1.17188 6.5 1.17188ZM11.6562 13.8281H1.34375V4.6875H2.51562V6.44531C2.51562 6.76893 2.77795 7.03125 3.10156 7.03125C3.42518 7.03125 3.6875 6.76893 3.6875 6.44531V4.6875H9.3125V6.44531C9.3125 6.76893 9.57482 7.03125 9.89844 7.03125C10.2221 7.03125 10.4844 6.76893 10.4844 6.44531V4.6875H11.6562V13.8281Z" fill="currentColor"/>
+                        </svg>
+
+                    </a>
+                </li>
             </ul>
-                </div>
-            </header>
+
+            {/* <!-- Toggler --> */}
+            <button class="navbar-toggler ms-4 ms-md-5 shadow-none bg-teal text-white icon-xs p-0 outline-0 h-40p w-40p d-flex d-xl-none place-flex-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                {/* <!-- Icon --> */}
+                <svg width="25" height="17" viewBox="0 0 25 17" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="1" fill="currentColor"/>
+                    <rect y="8" width="15" height="1" fill="currentColor"/>
+                    <rect y="16" width="20" height="1" fill="currentColor"/>
+                </svg>
+
+            </button>
+        </div>
+    </header>
+        
 
         </>
+
     );
 };
 
