@@ -83,12 +83,12 @@ const Footer = () => {
                                             </Link>
                                         </li>
                                         <li className="mb-3">
-                                            <Link to="about-v2.html" className="text-reset">
+                                            <Link to="about-v2.html" className="text-reset" to="/about">
                                                 About Us
                                             </Link>
                                         </li>
                                         <li className="mb-3">
-                                            <Link to="contact-us.html" className="text-reset">
+                                            <Link to="contact-us.html" className="text-reset" to="/contact">
                                                 Contact Us
                                             </Link>
                                         </li>
@@ -103,7 +103,7 @@ const Footer = () => {
                                             </Link>
                                         </li>
                                         <li className="mb-3">
-                                            <Link to="blog-grid-v1.html" className="text-reset">
+                                            <Link to="blog-grid-v1.html" className="text-reset" to="/blog">
                                                 Blog
                                             </Link>
                                         </li>
@@ -315,7 +315,7 @@ const Footer = () => {
 
                         <div className="col-12 mt-md-5">
                             <div className="pb-5 pt-6 py-md-4 text-center text-xl-start d-flex flex-column d-md-block d-xl-flex flex-xl-row align-items-center">
-                                <p className="text-gray-800 font-size-sm-alone d-block mb-0 mb-md-2 mb-xl-0 order-1 order-md-0 px-9 px-md-0">Copyright © 2021 LMS. All Right Reserved.</p>
+                                <p className="text-gray-800 font-size-sm-alone d-block mb-0 mb-md-2 mb-xl-0 order-1 order-md-0 px-9 px-md-0">Copyright © 2022 LMS. All Right Reserved.</p>
 
                                 <div className="ms-xl-auto d-flex flex-column flex-md-column align-items-stretch align-items-md-center justify-content-center">
                                     <ul className="navbar-nav flex-row flex-wrap font-size-sm-alone mb-3 mb-md-0 mx-n4 me-md-5 justify-content-center justify-content-lg-start order-1 order-md-0">
