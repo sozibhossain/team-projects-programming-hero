@@ -381,6 +381,17 @@ const Header = () => {
                             </Link>
                         
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <Link class="dropdown-item" to="/termsofservice">Terms of Service</Link>
+                                </li>
+                                <li><Link class="dropdown-item" to="/gallery">Gallery</Link></li>
+                            </ul>
+                        </li>
                         <li className="nav-item ">
                             <Link className="nav-link px-xl-4" to="/blog" id="navbarLandings">
                                 Blog
