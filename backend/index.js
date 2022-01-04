@@ -164,6 +164,53 @@ async function run() {
         })
         // =================  Teachers End ==================== //
 
+        // =================  Gallery Start ==================== //
+        // GET Gallery API
+        app.get('/gallery', async(req, res) => {
+            const cursor        = galleriesCollection.find({});
+            const gallery       = await cursor.toArray();
+            res.send(gallery);
+        });
+
+        // POST Gallery API
+        app.post('/gallery', async(req, res) => {
+            const gallery       = req.body;
+            const result        = await galleriesCollection.insertOne(gallery);
+            console.log(`Gallery Successfully inserted with the _id:${result.insertedId}`);
+            res.json(result);
+        })
+
+        // FIND SINGLE Gallery API
+        app.get('/gallery/:id', async(req, res) => {
+            const id    = req.params.id;
+            const query = {_id: id};
+            const gallery   =  await galleriesCollection.findOne(query);
+            res.json(gallery);
+        });
+
+        // Gallery UPDATE API
+        app.put("/gallery/:id", async (req, res) => {
+            const filter = { _id: req.params.id };
+            const result = await galleriesCollection.updateOne(filter, {
+            $set: {
+                // price: req.body.status,
+                name: req.body.name,
+                image: req.body.image
+            },
+            });
+            res.send(result);
+            // console.log(result);
+        });
+
+        // Gallery DELETE API
+        app.delete('/gallery/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id:id }
+            const result = await galleriesCollection.deleteOne(query);
+            res.send(result);
+        })
+        // =================  Gallery End ==================== //
+
     } 
     finally{
         // await client.close();
