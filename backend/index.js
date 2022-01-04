@@ -117,6 +117,53 @@ async function run() {
         })
         // =================  Blog End ==================== //
 
+        // =================  Teachers Start ==================== //
+        // GET Teachers API
+        app.get('/teachers', async(req, res) => {
+            const cursor        = teachersCollection.find({});
+            const teachers       = await cursor.toArray();
+            res.send(teachers);
+        });
+
+        // POST Teachers API
+        app.post('/teachers', async(req, res) => {
+            const teachers       = req.body;
+            const result        = await teachersCollection.insertOne(teachers);
+            console.log(`Teachers Successfully inserted with the _id:${result.insertedId}`);
+            res.json(result);
+        })
+
+        // FIND SINGLE Teachers API
+        app.get('/teachers/:id', async(req, res) => {
+            const id    = req.params.id;
+            const query = {_id: id};
+            const teachers   =  await teachersCollection.findOne(query);
+            res.json(teachers);
+        });
+
+        // Teachers UPDATE API
+        app.put("/teachers/:id", async (req, res) => {
+            const filter = { _id: req.params.id };
+            const result = await teachersCollection.updateOne(filter, {
+            $set: {
+                // price: req.body.status,
+                name: req.body.name,
+                image: req.body.image
+            },
+            });
+            res.send(result);
+            // console.log(result);
+        });
+
+        // Teachers DELETE API
+        app.delete('/teachers/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id:id }
+            const result = await teachersCollection.deleteOne(query);
+            res.send(result);
+        })
+        // =================  Teachers End ==================== //
+
     } 
     finally{
         // await client.close();
