@@ -57,7 +57,7 @@ const BlogGrid = () => {
 
                         <div class="mb-4 mb-xl-0 ms-xl-6">
                             <div class="border rounded d-flex align-items-center choices-label h-50p">
-                                <span class="ps-5">Sort by:</span>
+                                <span class="ps-5">SortBy:</span>
                                 <select class="form-select form-select-sm text-dark border-0 ps-1 bg-transparent flex-grow-1 dropdown-menu-end" data-choices>
                                     <option>Default</option>
                                     <option>New Courses</option>

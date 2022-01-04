@@ -16,6 +16,7 @@ import Faq from "./Components/Pages/Faq/Faq";
 import Gallery from "./Components/Pages/Gallery/Gallery";
 import Home from "./Components/Pages/Home/Home";
 import Login from "./Components/Pages/Login/Login";
+import PageNotFound from "./Components/Pages/PageNotFound/PageNotFound";
 import Registration from "./Components/Pages/Registration/Registration";
 import ShoppingCart from "./Components/Pages/ShoppingCart/ShoppingCart";
 import TermsOfService from "./Components/Pages/TermsOfService/TermsOfService";
@@ -46,6 +47,7 @@ function App() {
           <Route path="/gallery" element={<Gallery/>}></Route>
           <Route path="/shopping-cart" element={<ShoppingCart/>}></Route>
           <Route path="/faq" element={<Faq/>}></Route>
+          <Route path="*" element={<PageNotFound/>}></Route>
         </Routes>
       <Footer></Footer>
     </Router>
