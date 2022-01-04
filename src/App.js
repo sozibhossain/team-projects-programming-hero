@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route, Routes
@@ -20,10 +21,13 @@ import ShoppingCart from "./Components/Pages/ShoppingCart/ShoppingCart";
 import TermsOfService from "./Components/Pages/TermsOfService/TermsOfService";
 import Footer from "./Components/Shared/Footer/Footer";
 import Header from "./Components/Shared/Header/Header";
+import AuthProvider from "./contexts/AuthProvider";
 
 function App() {
   return (
-    <Router>
+    <div>
+      <AuthProvider>
+      <Router>
       <Header></Header>
         <Routes>
           <Route path="/contact" element={<Contact />}></Route>
@@ -45,6 +49,8 @@ function App() {
         </Routes>
       <Footer></Footer>
     </Router>
+      </AuthProvider>
+    </div>
   );
 }
 
