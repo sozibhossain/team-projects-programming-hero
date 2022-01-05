@@ -1,7 +1,28 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react/cjs/react.development';
+import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
+    const {user, loginUser, authError} =useAuth();
+
+    const [email, setEmail] = useState('');
+    console.log(email)
+    const [password, setPassword] = useState('');
+
+    const handleEmailChange = e => {
+        setEmail(e.target.value);
+      }
+    
+      const handlePasswordChange = e => {
+        setPassword(e.target.value)
+      }
+
+      const handleLoginSubmit = e => {
+        loginUser(email,password)
+        e.preventDefault();
+        
+      }
     return (
         <>     
     <header className="py-8 py-md-11">
@@ -37,7 +58,8 @@ const Login = () => {
                         <label for="modalSigninEmail1">
                             Username or Email
                         </label>
-                        <input type="email" className="form-control" id="modalSigninEmail1" placeholder="creativelayers"/>
+                        <input type="email" className="form-control" id="modalSigninEmail1" placeholder="creativelayers"
+                        onBlur={handleEmailChange}/>
                     </div>
 
                     
@@ -45,7 +67,8 @@ const Login = () => {
                         <label for="modalSigninPassword1">
                             Password
                         </label>
-                        <input type="password" className="form-control" id="modalSigninPassword1" placeholder="**********"/>
+                        <input type="password" className="form-control" id="modalSigninPassword1" placeholder="**********"
+                        onBlur={handlePasswordChange}/>
                     </div>
 
                     <div className="d-flex align-items-center mb-5 font-size-sm">
@@ -62,7 +85,7 @@ const Login = () => {
                     </div>
 
                 
-                    <button className="btn btn-block btn-primary" type="submit">
+                    <button onClick={handleLoginSubmit} className="btn btn-block btn-primary" type="submit">
                         LOGIN
                     </button>
                 </form>
