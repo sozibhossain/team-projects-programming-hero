@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { Dashboard } from '@mui/icons-material';
+
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -13,6 +13,7 @@ import Checkout from "./Components/Pages/Checkout/Checkout";
 import Contact from "./Components/Pages/Contact/Contact";
 import Courses from "./Components/Pages/Courses/Courses";
 import CourseSingle from "./Components/Pages/CourseSingle/CourseSingle";
+import DahsBord from "./Components/Pages/DashBord/DashBord";
 import Faq from "./Components/Pages/Faq/Faq";
 import Gallery from "./Components/Pages/Gallery/Gallery";
 import Home from "./Components/Pages/Home/Home";
@@ -50,7 +51,7 @@ function App() {
           <Route path="/course-single" element={<PrivateRoute><CourseSingle /></PrivateRoute>}></Route>
           <Route path="/gallery" element={<PrivateRoute><Gallery/></PrivateRoute>}></Route>
           <Route path="/shopping-cart" element={<PrivateRoute><ShoppingCart/></PrivateRoute>}></Route>
-          <Route path="/dash-bord" element={<PrivateRoute><Dashboard/></PrivateRoute>}></Route>
+          <Route path="/dash-bord" element={<PrivateRoute><DahsBord/></PrivateRoute>}></Route>
         </Routes>
       <Footer></Footer>
     </Router>

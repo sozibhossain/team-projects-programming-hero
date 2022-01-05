@@ -82,6 +82,7 @@ const Registration = () => {
                 <p className="mb-0 font-size-sm text-center">
                     Already have an account? <NavLink className="text-underline" to="/login">Log In</NavLink>
                 </p>
+                
                 <div>
                     {/* {user?.email && <Alert severity="success">This is a success alert — check it out!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>} */}
