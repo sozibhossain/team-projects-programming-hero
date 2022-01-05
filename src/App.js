@@ -50,7 +50,7 @@ function App() {
           <Route path="/course-single" element={<PrivateRoute><CourseSingle /></PrivateRoute>}></Route>
           <Route path="/gallery" element={<PrivateRoute><Gallery/></PrivateRoute>}></Route>
           <Route path="/shopping-cart" element={<PrivateRoute><ShoppingCart/></PrivateRoute>}></Route>
-          <Route path="/dashboard" element={<PrivateRoute><DahsBord/></PrivateRoute>}></Route>
+          <Route path="/dashboard/*" element={<PrivateRoute><DahsBord/></PrivateRoute>}></Route>
           <Route path="*" element={<PageNotFound/>}></Route>
         </Routes>
       <Footer></Footer>
