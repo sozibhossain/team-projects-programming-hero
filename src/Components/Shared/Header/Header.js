@@ -350,9 +350,9 @@ const Header = () => {
             <div className="container">
 
                 {/* <!-- Brand --> */}
-                <NavLink className="navbar-brand me-0" to="/">
+                <a className="navbar-brand me-0" href="/">
                     <img src="assets/img/brand.svg" className="navbar-brand-img" alt="..."/>
-                </NavLink>
+                </a>
 
                 {/* <!-- Collapse --> */}
                 <div className="collapse navbar-collapse z-index-lg" id="navbarCollapse">
@@ -370,9 +370,9 @@ const Header = () => {
                     {/* <!-- Navigation --> */}
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item ">
-                            <Link className="nav-link px-xl-4" to="/" id="navbarLandings">
+                            <a className="nav-link px-xl-4" href="/home" id="navbarLandings">
                                 Home
-                            </Link>
+                            </a>
                         
                         </li>
                         <li className="nav-item ">
@@ -383,13 +383,14 @@ const Header = () => {
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
+                                Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
                                     <Link class="dropdown-item" to="/termsofservice">Terms of Service</Link>
                                 </li>
                                 <li><Link class="dropdown-item" to="/gallery">Gallery</Link></li>
+                                <li><Link class="dropdown-item" to="/faq">FAQ</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item ">
