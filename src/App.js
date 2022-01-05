@@ -12,6 +12,7 @@ import Checkout from "./Components/Pages/Checkout/Checkout";
 import Contact from "./Components/Pages/Contact/Contact";
 import Courses from "./Components/Pages/Courses/Courses";
 import CourseSingle from "./Components/Pages/CourseSingle/CourseSingle";
+import DashBord from './Components/Pages/DashBord/DashBord';
 import Faq from "./Components/Pages/Faq/Faq";
 import Gallery from "./Components/Pages/Gallery/Gallery";
 import Home from "./Components/Pages/Home/Home";
@@ -46,6 +47,7 @@ function App() {
           <Route path="/termsofservice" element={<TermsOfService/>}></Route>
           <Route path="/gallery" element={<Gallery/>}></Route>
           <Route path="/shopping-cart" element={<ShoppingCart/>}></Route>
+          <Route path="/dash-bord" element={<DashBord/>}></Route>
           <Route path="/faq" element={<Faq/>}></Route>
           <Route path="*" element={<PageNotFound/>}></Route>
         </Routes>
