@@ -43,7 +43,6 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/termsofservice" element={<TermsOfService/>}></Route>
           <Route path="/faq" element={<Faq/>}></Route>
-          <Route path="*" element={<PageNotFound/>}></Route>
           <Route path="/about" element={<PrivateRoute><AboutUs /></PrivateRoute>}></Route>
           <Route path="/blog" element={<PrivateRoute> <BlogGrid /> </PrivateRoute>}> </Route>
           <Route path="/blog-single" element={<PrivateRoute><BlogSingle /></PrivateRoute>}></Route>
@@ -51,7 +50,8 @@ function App() {
           <Route path="/course-single" element={<PrivateRoute><CourseSingle /></PrivateRoute>}></Route>
           <Route path="/gallery" element={<PrivateRoute><Gallery/></PrivateRoute>}></Route>
           <Route path="/shopping-cart" element={<PrivateRoute><ShoppingCart/></PrivateRoute>}></Route>
-          <Route path="/dash-bord" element={<PrivateRoute><DahsBord/></PrivateRoute>}></Route>
+          <Route path="/dashboard" element={<PrivateRoute><DahsBord/></PrivateRoute>}></Route>
+          <Route path="*" element={<PageNotFound/>}></Route>
         </Routes>
       <Footer></Footer>
     </Router>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css';
 const Header = () => {
     return (
@@ -411,8 +411,8 @@ const Header = () => {
                             </Link>
                         </li>
                         <li className="nav-item ">
-                            <Link className="nav-link px-xl-4" to="/dash-bord" id="navbarLandings">
-                                Dash-Bord
+                            <Link className="nav-link px-xl-4" to="/dashboard" id="navbarLandings">
+                                Dashboard
                             </Link>
                         </li>
                     </ul>
