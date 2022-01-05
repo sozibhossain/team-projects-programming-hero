@@ -390,6 +390,7 @@ const Header = () => {
                                     <Link class="dropdown-item" to="/termsofservice">Terms of Service</Link>
                                 </li>
                                 <li><Link class="dropdown-item" to="/gallery">Gallery</Link></li>
+                                <li><Link class="dropdown-item" to="/faq">FAQ</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item ">
