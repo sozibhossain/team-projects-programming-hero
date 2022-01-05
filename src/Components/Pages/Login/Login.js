@@ -4,7 +4,7 @@ import { useState } from 'react/cjs/react.development';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
-    const {user, loginUser, authError} =useAuth();
+    const {user, loginUser, authError, signInWithGoogle} =useAuth();
 
     const [email, setEmail] = useState('');
     console.log(email)
@@ -23,6 +23,11 @@ const Login = () => {
         e.preventDefault();
         
       }
+
+      const handleGoogleSignIn = ()=>{
+        signInWithGoogle()
+      }
+
     return (
         <>     
     <header className="py-8 py-md-11">
@@ -94,6 +99,11 @@ const Login = () => {
                 <p className="mb-0 font-size-sm text-center">
                     Don't have an account? <NavLink className="text-underline" to="/registration">Sign up</NavLink>
                 </p>
+                <br/>
+                <br/>
+                <button onClick={handleGoogleSignIn} className="btn btn-block btn-primary" type="submit">
+                <img src="https://img.icons8.com/fluency/144/000000/google-logo.png"/>
+                    </button>
             </div>
         </div>
     </div>

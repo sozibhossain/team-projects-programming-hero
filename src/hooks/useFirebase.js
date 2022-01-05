@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
 
@@ -10,6 +10,7 @@ const useFirebase = () =>{
     const [authError, setAuthError] = useState('');
 
     const auth = getAuth();
+    const googleProvider = new GoogleAuthProvider();
     const registrerUser = (email, password) =>{
         createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -28,6 +29,16 @@ const useFirebase = () =>{
         .catch((error) => {
           setAuthError(error.message);
         });
+    }
+
+    const signInWithGoogle = () =>{
+      signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        const user = result.user;
+        setAuthError('');
+      }).catch((error) => {
+         setAuthError(error.message);
+      });
     }
 
     // observer the user state
@@ -54,7 +65,7 @@ return{
     user,
     registrerUser,
     loginUser,
-    // signInUsingGoogle,
+    signInWithGoogle,
     logout,
     authError
 }

@@ -5,7 +5,7 @@ import useAuth from '../../../hooks/useAuth';
 
 const Registration = () => {
     
-    const {user, registrerUser, authError} =useAuth();
+    const {user, registrerUser, authError, signInWithGoogle} =useAuth();
 
     const [email, setEmail] = useState('');
     console.log(email)
@@ -23,6 +23,10 @@ const Registration = () => {
         registrerUser(email,password)
         e.preventDefault();
         
+      }
+
+      const handleGoogleSignIn = ()=>{
+        signInWithGoogle()
       }
 
     return (
@@ -82,7 +86,11 @@ const Registration = () => {
                 <p className="mb-0 font-size-sm text-center">
                     Already have an account? <NavLink className="text-underline" to="/login">Log In</NavLink>
                 </p>
-                
+                <br/>
+                <br/>
+                <button onClick={handleGoogleSignIn} className="btn btn-block btn-primary" type="submit">
+                <img src="https://img.icons8.com/fluency/144/000000/google-logo.png"/>
+                    </button>
                 <div>
                     {/* {user?.email && <Alert severity="success">This is a success alert — check it out!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>} */}
