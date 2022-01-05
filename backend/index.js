@@ -24,6 +24,7 @@ async function run() {
         const galleriesCollection   = databse.collection('galleries');
 
         // =================  Course Start ==================== //
+        
         // GET Courses API
         app.get('/courses', async(req, res) => {
             const cursor        = coursesCollection.find({});
@@ -35,14 +36,14 @@ async function run() {
         app.post('/courses', async(req, res) => {
             const courses       = req.body;
             const result        = await coursesCollection.insertOne(courses);
-            console.log(`Courses Successfully inserted with the _id:${result.insertedId}`);
+            //console.log(`Courses Successfully inserted with the _id:${result.insertedId}`);
             res.json(result);
         })
 
         // FIND SINGLE Courses API
         app.get('/courses/:id', async(req, res) => {
             const id    = req.params.id;
-            const query = {_id: id};
+            const query = {_id: ObjectId(id)};
             const courses   =  await coursesCollection.findOne(query);
             res.json(courses);
         });
@@ -89,7 +90,7 @@ async function run() {
         // FIND SINGLE Blogs API
         app.get('/blogs/:id', async(req, res) => {
             const id    = req.params.id;
-            const query = {_id: id};
+            const query = {_id: ObjectId(id)};
             const blogs   =  await blogsCollection.findOne(query);
             res.json(blogs);
         });
@@ -120,6 +121,10 @@ async function run() {
         // =================  Teachers Start ==================== //
         // GET Teachers API
         app.get('/teachers', async(req, res) => {
+            // const options = { ordered: true };
+            // const result = await teachersCollection.insertMany(docs, options);
+            // console.log(`${result.insertedCount} documents were inserted`);
+
             const cursor        = teachersCollection.find({});
             const teachers       = await cursor.toArray();
             res.send(teachers);
@@ -131,12 +136,13 @@ async function run() {
             const result        = await teachersCollection.insertOne(teachers);
             console.log(`Teachers Successfully inserted with the _id:${result.insertedId}`);
             res.json(result);
+             
         })
 
         // FIND SINGLE Teachers API
         app.get('/teachers/:id', async(req, res) => {
             const id    = req.params.id;
-            const query = {_id: id};
+            const query = {_id: ObjectId(id)};
             const teachers   =  await teachersCollection.findOne(query);
             res.json(teachers);
         });
@@ -183,7 +189,7 @@ async function run() {
         // FIND SINGLE Gallery API
         app.get('/gallery/:id', async(req, res) => {
             const id    = req.params.id;
-            const query = {_id: id};
+            const query = {_id: ObjectId(id)};
             const gallery   =  await galleriesCollection.findOne(query);
             res.json(gallery);
         });
