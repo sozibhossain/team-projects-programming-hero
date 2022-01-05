@@ -17,6 +17,7 @@ import Gallery from "./Components/Pages/Gallery/Gallery";
 import Home from "./Components/Pages/Home/Home";
 import Login from "./Components/Pages/Login/Login";
 import PageNotFound from "./Components/Pages/PageNotFound/PageNotFound";
+import PrivateRoute from './Components/Pages/PrivateRoute/PrivateRoute';
 import Registration from "./Components/Pages/Registration/Registration";
 import ShoppingCart from "./Components/Pages/ShoppingCart/ShoppingCart";
 import TermsOfService from "./Components/Pages/TermsOfService/TermsOfService";
@@ -38,16 +39,19 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/about" element={<AboutUs />}></Route>
-          <Route path="/blog" element={<BlogGrid />}></Route>
-          <Route path="/blog-single" element={<BlogSingle />}></Route>
-          <Route path="/courses" element={<Courses />}></Route>
-          <Route path="/course-single" element={<CourseSingle />}></Route>
           <Route path="/termsofservice" element={<TermsOfService/>}></Route>
-          <Route path="/gallery" element={<Gallery/>}></Route>
-          <Route path="/shopping-cart" element={<ShoppingCart/>}></Route>
           <Route path="/faq" element={<Faq/>}></Route>
           <Route path="*" element={<PageNotFound/>}></Route>
+
+          //private routes
+          <Route path="/about" element={<PrivateRoute><AboutUs /></PrivateRoute>}></Route>
+          <Route path="/blog" element={<PrivateRoute> <BlogGrid /> </PrivateRoute>}> </Route>
+          <Route path="/blog-single" element={<PrivateRoute><BlogSingle /></PrivateRoute>}></Route>
+          <Route path="/courses" element={<PrivateRoute><Courses /></PrivateRoute>}></Route>
+          <Route path="/course-single" element={<PrivateRoute><CourseSingle /></PrivateRoute>}></Route>
+          <Route path="/gallery" element={<PrivateRoute><Gallery/></PrivateRoute>}></Route>
+          <Route path="/shopping-cart" element={<PrivateRoute><ShoppingCart/></PrivateRoute>}></Route>
+          
         </Routes>
       <Footer></Footer>
     </Router>
