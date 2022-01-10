@@ -17,7 +17,7 @@ const TermsOfService = () => {
                             </li>
                             <li class="breadcrumb-item">
                                 <NavLink className="nav-link px-xl-4" to="/termsofservice"  id="navbarLandings">
-                                Terms of Service
+                                Terms of Service Hello
                                 </NavLink>
                             </li>
                         </ol>
